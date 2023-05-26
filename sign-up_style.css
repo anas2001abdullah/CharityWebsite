@@ -56,9 +56,12 @@ input[type="tel"] {
   font-family: "Cairo", sans-serif;
   text-align: right;
 }
-
+input[type="password"],
 input[type="tel"] {
   text-align: left;
+}
+input[type="password"]{
+  padding-left: 45px;
 }
 
 input[type="submit"] {
@@ -78,7 +81,7 @@ input[type="submit"]:hover {
   background-color: #124871;
   color: #fbfbfb;
 }
-
+input[type="password"]::placeholder,
 input[type="tel"]::placeholder {
   text-align: right;
 }
@@ -124,15 +127,11 @@ input[type="tel"]::placeholder {
 }
 
 .show-password-icon {
-  width: 25px;
-  height: 25px;
-  background-image: url("images/eye.png");
-  background-size: contain;
-  background-repeat: no-repeat;
+ 
   cursor: pointer;
   position: absolute;
-  top: 10px;
-  left: 15px;
+  top: 12px;
+  left: 12px;
 }
 #firstName,
 #lastName {

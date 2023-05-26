@@ -9,10 +9,16 @@ for(var i = 0; i < document.querySelectorAll(".show-password-icon").length; i++)
         
         if (password.type === "password") {
            password.type = "text";
-           this.style.backgroundImage = 'url("images/eye_slash_icon.png")';
+           password.style.paddingLeft = "45px";
+           password.style.textAlign = "left";
+           this.classList.remove("fa-eye");
+           this.classList.add("fa-eye-slash");
+           
         } else {
           password.type = "password";
-          this.style.backgroundImage = 'url("images/eye.png")';
+          
+          this.classList.remove("fa-eye-slash");
+          this.classList.add("fa-eye");
         }
 })
 }
