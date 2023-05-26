@@ -68,9 +68,7 @@ input[type="submit"] {
   color: #ffffff;
   cursor: pointer;
   font-size: 20px;
-
-  margin-top: 25px;
-
+  
   padding: 5px;
   width: 70%;
   font-family: "Cairo", sans-serif;
@@ -87,7 +85,9 @@ input[type="tel"]::placeholder {
 
 .city-select,
 .account-type-select {
+  
   margin: 10px;
+  margin-bottom: 25px;
   display: inline;
 }
 
@@ -167,4 +167,12 @@ form {
     margin: auto;
     float: none;
   }
+.city-select,
+.account-type-select {
+ float: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 }
