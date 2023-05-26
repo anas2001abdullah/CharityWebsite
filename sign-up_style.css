@@ -19,7 +19,7 @@ h1 {
 select {
   font-family: "Cairo", sans-serif;
   background-color: #ffffff;
-  width: 80px;
+  width: 70px;
   color: #333;
   font-size: 16px;
   padding: 8px 5px;
@@ -88,11 +88,12 @@ input[type="tel"]::placeholder {
 .city-select,
 .account-type-select {
   margin: 10px;
-  display: inline-block;
+  display: inline;
 }
 
 .account-type-select {
   float: left;
+  
 }
 
 .city-select {
@@ -139,7 +140,7 @@ input[type="tel"]::placeholder {
   width: 47%;
 }
 #firstName {
-  margin-left: 23px;
+  margin-left: 4%;
 }
 
 #city-label,
@@ -151,4 +152,19 @@ input[type="tel"]::placeholder {
 
 form {
   margin: 0 auto;
+}
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 20px;
+  }
+  body{
+    padding: 10px;
+    background-image: url("images/flat-lay-paper-hand-holding-heart-with-copy-space.jpg");
+  }
+  .sign-up-box{
+    width: 95%;
+    padding: 10px;
+    margin: auto;
+    float: none;
+  }
 }
