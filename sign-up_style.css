@@ -158,7 +158,8 @@ form {
   }
   body{
     padding: 10px;
-    background-image: url("images/flat-lay-paper-hand-holding-heart-with-copy-space.jpg");
+    background-image: none;
+    background: linear-gradient(to bottom, #B0DAFF, #19A7CE);
   }
   .sign-up-box{
     width: 95%;
