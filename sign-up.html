@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign-up</title>
+    <!--Css link-->
+    <link rel="stylesheet" href="sign-up_style.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Font Awsome script -->
+    <!-- <script src="https://kit.fontawesome.com/a4bad4469f.js" crossorigin="anonymous"></script> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Cairo&family=El+Messiri&family=Khand:wght@500&family=Lemonada&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+      <div class=" sign-up-box">
+        <h1>أهلاً بك في موقعنا</h1>
+        <form>
+          <input id="lastName" type="text" placeholder="الكنية" required />
+          <input id="firstName" type="text" placeholder="الاسم" required />
+          <input id="ID" type="text" placeholder="الرقم الوطني" required />
+         
+          <input type="tel" id="phone" name="phone" placeholder="رقم الهاتف" pattern="09[0-9]{8}">
+          <input
+            id="email"
+            type="text"
+            placeholder="عنوان البريد الالكتروني"
+            required
+          />
+          <div class = "pass-container">
+            <input name = "pass" class ="password" type="password" placeholder="كلمة السر" required />
+            <span class="show-password-icon"></span>
+          </div>
+           
+          <div class = "pass-container">
+            <input name = "pass" class ="password" type="password" placeholder="أدخل كلمة السر مرة أخرى" required />
+            <span class="show-password-icon"></span>
+          </div>
+           
+          
+          
+         
+          <div class="account-type-select">
+            <select name="account-type" id="account-type" >
+              <option value="" selected>متبرع</option>
+              <option value="">محتاج</option>
+            </select>
+            <label id="account-type-label" for="account-type"
+              >:اختر نوع الحساب</label
+            >
+          </div>
+          <div class="city-select ">
+            <select name="city" id="city" >
+              <option value="" selected>دمشق</option>
+              <option value="">ريف دمشق</option>
+              <option value="">اللاذقية</option>
+              <option value="">طرطوس</option>
+              <option value="">حمص</option>
+              <option value="">حماة</option>
+              <option value="">حلب</option>
+              <option value="">درعا</option>
+              <option value="">السويداء</option>
+              <option value="">القنيطرة</option>
+              <option value="">دير الزور</option>
+              <option value="">الرقة</option>
+              <option value="">إدلب</option>
+              <option value="">الحسكة</option>
+            </select>
+            <label id="city-label" for="city">:اختر مدينتك</label>
+          </div>
+  
+          <input type="submit" value="إنشاء حساب" />
+        </form>
+      </div>
+   
+  </body>
+</html>
