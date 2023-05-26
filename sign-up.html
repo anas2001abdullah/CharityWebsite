@@ -33,13 +33,13 @@
             required
           />
           <div class = "pass-container">
-            <input name = "pass" class ="password" type="password" placeholder="كلمة السر" required />
-            <span class="show-password-icon"></span>
+            <input name = "pass"  class ="password first" type="password" placeholder="كلمة السر" required />
+            <span id = "firstPass" class="show-password-icon"></span>
           </div>
            
           <div class = "pass-container">
-            <input name = "pass" class ="password" type="password" placeholder="أدخل كلمة السر مرة أخرى" required />
-            <span class="show-password-icon"></span>
+            <input name = "pass" class ="password second" type="password" placeholder="أدخل كلمة السر مرة أخرى" required />
+            <span  id = "secondPass" class="show-password-icon"></span>
           </div>
            
           
@@ -77,6 +77,6 @@
           <input type="submit" value="إنشاء حساب" />
         </form>
       </div>
-   
+   <script src = "sign-up.js"></script>
   </body>
 </html>
