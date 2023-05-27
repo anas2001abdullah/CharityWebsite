@@ -39,9 +39,7 @@ select:focus {
   border-color: #333;
   outline: none;
 }
-input[type="text"]{
-  writing-mode: rl;
-}
+
 input[type="text"],
 input[type="password"],
 input[type="tel"] {
