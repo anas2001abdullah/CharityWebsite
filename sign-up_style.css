@@ -1,6 +1,6 @@
 body {
   /* background-color: #2a3554; */
-  background-image: url("images/charity.jpg");
+  background-image: url("images/anas.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   padding: 20px;
@@ -9,7 +9,7 @@ body {
 
 h1 {
   font-size: 30px;
-  color: #C21010;
+  color: #c21010;
   margin-bottom: 35px;
   font-family: "Lemonada", cursive;
   text-align: center;
@@ -39,7 +39,9 @@ select:focus {
   border-color: #333;
   outline: none;
 }
-
+input[type="text"]{
+  writing-mode: rl;
+}
 input[type="text"],
 input[type="password"],
 input[type="tel"] {
@@ -54,41 +56,38 @@ input[type="tel"] {
   backdrop-filter: blur(25px);
   color: rgb(0, 0, 0);
   font-family: "Cairo", sans-serif;
-  text-align: right;
 }
 input[type="password"],
 input[type="tel"] {
   text-align: left;
 }
-input[type="password"]{
+input[type="password"] {
   padding-left: 45px;
 }
 
 input[type="submit"] {
-  background-color: #C21010;
+  background-color: #c21010;
   border: none;
   border-radius: 20px;
   color: #ffffff;
   cursor: pointer;
   font-size: 20px;
-  
   padding: 5px;
   width: 70%;
   font-family: "Cairo", sans-serif;
+  margin-bottom: 5px;
 }
 
 input[type="submit"]:hover {
   background-color: #124871;
   color: #fbfbfb;
 }
-input[type="password"]::placeholder,
-input[type="tel"]::placeholder {
+input::placeholder {
   text-align: right;
 }
 
 .city-select,
 .account-type-select {
-  
   margin: 10px;
   margin-bottom: 25px;
   display: inline;
@@ -96,7 +95,6 @@ input[type="tel"]::placeholder {
 
 .account-type-select {
   float: left;
-  
 }
 
 .city-select {
@@ -127,7 +125,6 @@ input[type="tel"]::placeholder {
 }
 
 .show-password-icon {
- 
   cursor: pointer;
   position: absolute;
   top: 12px;
@@ -137,7 +134,9 @@ input[type="tel"]::placeholder {
 #lastName {
   display: inline-block;
   width: 47%;
+  text-align: right;
 }
+
 #firstName {
   margin-left: 4%;
 }
@@ -148,7 +147,6 @@ input[type="tel"]::placeholder {
   margin-left: 10px;
 }
 
-
 form {
   margin: 0 auto;
 }
@@ -156,23 +154,22 @@ form {
   h1 {
     font-size: 20px;
   }
-  body{
+  body {
     padding: 10px;
     background-image: none;
-    background: linear-gradient(to bottom, #B0DAFF, #19A7CE);
+    background: linear-gradient(to bottom, #b0daff, #19a7ce);
   }
-  .sign-up-box{
+  .sign-up-box {
     width: 95%;
     padding: 10px;
     margin: auto;
     float: none;
   }
-.city-select,
-.account-type-select {
- float: none;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
+  .city-select,
+  .account-type-select {
+    float: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
