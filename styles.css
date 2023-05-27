@@ -29,7 +29,7 @@ input[type="password"] {
   display: inline-block;
   background-color: #223387d6;
   backdrop-filter: blur(25px);
-  color: rgb(0, 0, 0);
+  color: white;
   font-family: "Cairo", sans-serif;
 }
 
@@ -91,13 +91,13 @@ input[type="text"] {
 .show-password-icon {
   cursor: pointer;
   position: absolute;
-  top: 20px;
+  top: 30px;
   left: 12px;
 }
 .envelop-icon {
   
   position: absolute;
-  top: 20px;
+  top: 30px;
   left: 12px;
 }
 
