@@ -29,6 +29,9 @@ select {
   -moz-appearance: none;
   appearance: none;
   text-align: center;
+  margin: 10px;
+  margin-bottom: 25px;
+  display: inline;
 }
 
 select:hover {
@@ -84,12 +87,7 @@ input::placeholder {
   text-align: right;
 }
 
-.city-select,
-.account-type-select {
-  margin: 10px;
-  margin-bottom: 25px;
-  display: inline;
-}
+
 
 .account-type-select {
   float: left;
@@ -144,7 +142,9 @@ input::placeholder {
   color: rgb(29, 28, 28);
   margin-left: 10px;
 }
-
+#city{
+  width: 90px;
+}
 form {
   margin: 0 auto;
 }
@@ -169,6 +169,6 @@ form {
     display: block;
     margin-left: auto;
     margin-right: auto;
-   padding: 4px;
+    padding: 8px;
   }
 }
