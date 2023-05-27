@@ -20,8 +20,9 @@ select {
   font-family: "Cairo", sans-serif;
   background-color: #ffffff;
   width: 70px;
+  min-height: 30px;
   color: #333;
-  font-size: 16px;
+  font-size: 14px;
   padding: 8px 5px;
   border: 1px solid #ccc;
   border-radius: 6px;
@@ -55,7 +56,7 @@ input[type="tel"] {
   display: inline-block;
   background-color: transparent;
   backdrop-filter: blur(25px);
-  color: rgb(0, 0, 0);
+  color: white;
   font-family: "Cairo", sans-serif;
 }
 input[type="password"],
@@ -85,6 +86,7 @@ input[type="submit"]:hover {
 }
 input::placeholder {
   text-align: right;
+  color: white;
 }
 
 
@@ -105,7 +107,6 @@ input::placeholder {
   border: 1px solid #000000;
   border-radius: 20px;
   box-shadow: 0px 0px 5px #ccc;
-
   padding: 10px 20px;
   /* margin: 20px auto; */
   float: right;

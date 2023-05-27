@@ -1,68 +1,106 @@
 body {
-  
-  background-image: url("images/flat-lay-paper-hand-holding-heart-with-copy-space.jpg");
+  background-image: url("images/blue2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  font-family: Arial, sans-serif;
+  font-family: "Cairo", sans-serif;
 }
 
 .login-box {
-  border: 1px solid #ccc;
+  border: 1px solid #13005A;
   border-radius: 20px;
-  box-shadow: 0px 0px 5px #ccc;
+  box-shadow: 0px 0px 50px #13005A;
   margin: 170px auto;
   padding: 20px;
   width: 300px;
   text-align: center;
-  background-color: transparent;
-  backdrop-filter: blur(5px);
+  background-color: #1c2a72d6;
+  backdrop-filter: blur(10px);
 }
 
 
 input[type="text"],
 input[type="password"] {
-  border: 1px solid #ccc;
+  border: 1px solid #edad34;
   border-radius: 4px;
   box-sizing: border-box;
-  margin-bottom: 35px;
+  margin: 15px 0px;
   padding: 8px;
   width: 100%;
-  display: block;
-  background-color: transparent;
-  backdrop-filter: blur(5px);
-  color: white;
-  font-family: 'Khand', sans-serif;
+  display: inline-block;
+  background-color: #223387d6;
+  backdrop-filter: blur(25px);
+  color: rgb(0, 0, 0);
+  font-family: "Cairo", sans-serif;
 }
 
+input::placeholder {
+  text-align: right;
+  color: #edac34bc;
+}
 
 h1 {
-  font-size: 32px;
-  color: rgb(255, 255, 255);
+  font-size: 30px;
+  color: #e23131;
   margin-bottom: 35px;
-  
-  font-size: 40px;
+  font-family: "Lemonada", cursive;
   font-weight: bolder;
 }
 
 p{
   margin-top: 30px;
-  color: whitesmoke;
+  color: white;
+  font-size: 15px;
 }
 
 a{
+  margin-right: 10px;
   text-decoration: none;
+  color: #e23636;
+  font-size: 15px;
 }
 input[type="submit"] {
-  background-color: #e78f8f;
+  background-color: #edad34;
   border: none;
   border-radius: 20px;
-  color: #000000;
+  color: #1D267D;
   cursor: pointer;
-  font-size: 16px;
-  margin-top: 10px;
+  font-size: 15px;
+  margin-top: 25px;
   padding: 5px;
-  width: 75%;
-  font-family: 'Amatic SC', cursive;
+  width: 50%;
+  height: 20%;
+  font-family: "Cairo", sans-serif;
   
-  font-size: 24px;
+  
+}
+
+input[type="password"],
+input[type="text"] {
+  padding-left: 45px;
+}
+
+.error{
+  color: #e23636;
+  text-align: right;
+  margin-right: 4px;
+  font-family: 'Readex Pro', sans-serif;
+  font-size: 0.6em;
+  font-weight: bold;
+}
+
+.show-password-icon {
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  left: 12px;
+}
+.envelop-icon {
+  
+  position: absolute;
+  top: 20px;
+  left: 12px;
+}
+
+.pass-container {
+  position: relative;
 }
