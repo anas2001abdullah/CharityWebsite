@@ -86,7 +86,7 @@ input[type="submit"]:hover {
 }
 input::placeholder {
   text-align: right;
-  color: white;
+  color: rgb(41, 40, 40);
 }
 
 

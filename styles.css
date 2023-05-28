@@ -20,7 +20,7 @@ body {
 
 input[type="text"],
 input[type="password"] {
-  border: 1px solid #edad34;
+  border: 1px solid #efe8e8bc;
   border-radius: 4px;
   box-sizing: border-box;
   margin: 15px 0px;
@@ -35,7 +35,7 @@ input[type="password"] {
 
 input::placeholder {
   text-align: right;
-  color: #edac34bc;
+  color: #efe8e8bc;
 }
 
 h1 {
@@ -103,4 +103,22 @@ input[type="text"] {
 
 .pass-container {
   position: relative;
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 20px;
+  }
+  body {
+    padding: 10px;
+    background-image: none;
+    background: linear-gradient(to bottom, #e0df85, #ceaa19);
+  }
+  .login-box {
+    width: 95%;
+    padding: 10px;
+    border: none;
+    box-shadow: none;
+
+  }
 }
