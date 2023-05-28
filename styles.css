@@ -9,11 +9,10 @@ body {
   border-radius: 20px;
   box-shadow: 0px 0px 70px #152c53d6;
   margin:  9% auto;
-  padding: 15px;
+  padding: 1%;
   width: 25%;
   text-align: center;
   background-color: #1c3c72d6;
-  backdrop-filter: blur(10px);
 }
 
 
@@ -22,43 +21,44 @@ input[type="password"] {
   border: 1px solid #efe8e8bc;
   border-radius: 4px;
   box-sizing: border-box;
-  margin: 15px 0px;
-  padding: 8px;
+  margin: 3% 0%;
+  padding: 2.5%;
   width: 100%;
   display: inline-block;
   background-color: #0c3272d6;
-  backdrop-filter: blur(25px);
   color: white;
   font-family: "Cairo", sans-serif;
+  font-size: 1vw;
  
 }
 
 input::placeholder {
   text-align: right;
   color: #efe8e883;
+  font-size: 1vw;
 }
 
 h1 {
-  font-size: 25px;
+  font-size: 2vw;
   color: #efb812;
-  margin-bottom: 35px;
+  margin-bottom: 8%;
   font-family: "Lemonada", cursive;
   font-weight: bolder;
 }
 
 p{
-  margin-top: 30px;
+  margin-top: 8%;
   margin-bottom: 0px;
   color: white;
-  font-size: 15px;
+  font-size: 1vw;
   
 }
 
 a{
-  margin-right: 10px;
+  margin-right: 2%;
   text-decoration: none;
   color: #e82424;
-  font-size: 15px;
+  font-size: 1vw;
   font-weight: bolder;
 }
 
@@ -68,9 +68,9 @@ input[type="submit"] {
   border-radius: 20px;
   color: #1D267D;
   cursor: pointer;
-  font-size: 15px;
-  margin-top: 35px;
-  padding: 5px;
+  font-size: 1.1vw;
+  margin-top: 10%;
+  padding: 2%;
   width: 50%;
   height: 20%;
   font-family: "Cairo", sans-serif;
@@ -78,15 +78,15 @@ input[type="submit"] {
 
 input[type="password"],
 input[type="text"] {
-  padding-left: 45px;
+  padding-left: 12%;
 }
 
 .error{
-  color: #FD5D5D;
+  color: #E21818;
   text-align: right;
-  margin-right: 6px;
+  margin-right: 2%;
   font-family: 'Readex Pro', sans-serif;
-  font-size: 0.7em;
+  font-size: 0.8vw;
   font-weight: bold;
 }
 
@@ -94,18 +94,21 @@ input[type="text"] {
   cursor: pointer;
   position: absolute;
   color: #efe8e8bc;
-  top: 30px;
-  left: 12px;
+  top: 40%;
+  left: 4%;
+  font-size: 1vw;
 }
 .envelop-icon {
   position: absolute;
-  top: 30px;
   color: #efe8e8bc;
-  left: 12px;
+  top: 40%;
+  left: 4%;
+  font-size: 1vw;
 }
 
-.pass-container {
+.container {
   position: relative;
+
 }
 
 @media screen and (max-width: 600px) {
@@ -115,7 +118,7 @@ input[type="text"] {
   body {
     padding: 10px;
     background-image: none;
-    background: linear-gradient(to bottom, #dedd7a, #cdab22);
+    background-color:#dfdc4be2;
   }
   .login-box {
     width: 95%;
@@ -123,6 +126,29 @@ input[type="text"] {
     padding: 10px;
     border: none;
     box-shadow: none;
+  }
+  input[type="text"],
+  input[type="password"],
+  input[type="submit"]{
+    font-size: 15px;
+  }
+  input::placeholder{
+    font-size: 0.9rem;
+  }
+  .error{
+    font-size: 0.7rem;
+  }
+  p{
+    font-size: 0.875rem;
+  }
+  a{
+    font-size: 0.875rem;
+  }
+  .show-password-icon{
+    font-size: 1rem;
+  }
+  .envelop-icon{
+    font-size: 1rem;
   }
 
 }

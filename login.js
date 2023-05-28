@@ -4,7 +4,7 @@ document.querySelector(".show-password-icon").addEventListener("click", function
     
     if (password.type === "password") {
        password.type = "text";
-       password.style.paddingLeft = "45px";
+       password.style.paddingLeft = "10%";
        password.style.textAlign = "left";
        this.classList.remove("fa-eye");
        this.classList.add("fa-eye-slash");

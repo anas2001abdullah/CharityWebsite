@@ -3,14 +3,14 @@ body {
   background-image: url("images/anas.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 15px;
+  padding: 0.5%;
   font-family: "Cairo", sans-serif;
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 1.7vw;
   color: #c21010;
-  margin-bottom: 25px;
+  margin-bottom: 4%;
   font-family: "Lemonada", cursive;
   text-align: center;
   font-weight: bolder;
@@ -19,20 +19,18 @@ h1 {
 select {
   font-family: "Cairo", sans-serif;
   background-color: #ffffff;
-  
-  min-height: 30px;
+  height: 6%;
   color: #333;
-  font-size: 14px;
-  padding: 8px 5px;
+  font-size: 1vw;
+  padding: 2.5% 2%;
   border: 1px solid #ccc;
   border-radius: 6px;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   text-align: center;
-  margin: 10px;
-  margin-bottom: 25px;
-  display: inline;
+  
+  
 }
 
 select:hover {
@@ -50,21 +48,23 @@ input[type="tel"] {
   border: 1px solid #292727;
   border-radius: 4px;
   box-sizing: border-box;
-  margin: 10px 0px;
-  padding: 8px;
+  margin: 3% 0%;
+  padding: 2%;
   width: 100%;
   display: inline-block;
   background-color: transparent;
   backdrop-filter: blur(25px);
   color: black;
   font-family: "Cairo", sans-serif;
+  font-size: 0.9vw;
 }
+
 input[type="password"],
 input[type="tel"] {
   text-align: left;
 }
 input[type="password"] {
-  padding-left: 45px;
+  padding-left: 10%;
 }
 
 input[type="submit"] {
@@ -73,11 +73,10 @@ input[type="submit"] {
   border-radius: 20px;
   color: #ffffff;
   cursor: pointer;
-  font-size: 20px;
-  padding: 5px;
+  font-size: 1.3vw;
+  padding: 1%;
   width: 60%;
   font-family: "Cairo", sans-serif;
-  margin-bottom: 5px;
 }
 
 input[type="submit"]:hover {
@@ -97,22 +96,29 @@ input::placeholder {
   float: right;
 }
 
+.account-type-select,
+.city-select{
+  margin-top: 3%;
+  margin-bottom: 8%;
+  width: 50%;
+} 
+
 .pass-container {
   position: relative;
 }
 .error{
   color: #a52121;
   text-align: right;
-  margin-right: 6px;
+  margin-right: 2%;
   font-family: 'Readex Pro', sans-serif;
-  font-size: 0.6em;
+  font-size: 0.8vw;
   font-weight: bold;
 }
 .sign-up-box {
   border: 1px solid #000000;
   border-radius: 20px;
   box-shadow: 0px 0px 5px #ccc;
-  padding: 10px 20px;
+  padding: 1% 1%;
   float: right;
   text-align: center;
   background-color: transparent;
@@ -126,8 +132,9 @@ input::placeholder {
 .show-password-icon {
   cursor: pointer;
   position: absolute;
-  top: 24px;
-  left: 12px;
+  top: 40%;
+  left: 3%;
+  font-size: 1vw;
 }
 
 #firstName,
@@ -144,17 +151,19 @@ input::placeholder {
 #city-label,
 #account-type-label {
   color: rgb(29, 28, 28);
-  margin-left: 5px;
+  width: 60%;
+  font-size: 1vw;
+  padding-left: 4%;
 }
+#account-type,
 #city{
-  width: 80px;
+  width: 40%;
 }
-#account-type{
-  width: 60px;
-}
+
 form {
   margin: 0 auto;
 }
+
 @media screen and (max-width: 600px) {
   h1 {
     font-size: 20px;
@@ -177,5 +186,26 @@ form {
     margin-left: auto;
     margin-right: auto;
     padding: 8px;
+  }
+  select{
+    font-size: 15px;
+  }
+  input[type="text"],
+  input[type="password"],
+  input[type="tel"]{
+    font-size: 15px;
+  }
+  input[type="submit"]{
+    font-size: 1.25rem;
+  }
+  .error{
+    font-size: 0.7rem;
+  }
+  .show-password-icon{
+    font-size: 1rem;
+  }
+  #city-label,
+#account-type-label{
+    font-size: 15px;
   }
 }
