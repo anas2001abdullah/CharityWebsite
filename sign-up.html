@@ -8,12 +8,10 @@
     <!--Css link-->
     <link rel="stylesheet" href="sign-up_style.css" />
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Cairo&family=El+Messiri&family=Khand:wght@500&family=Lemonada&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Cairo&family=Lemonada&family=Readex+Pro&display=swap" rel="stylesheet">
+     
     <!-- Font Awsome script -->
    
    <link rel="stylesheet" href="font awesome lib/css/all.css">
@@ -34,16 +32,19 @@
             placeholder="عنوان البريد الالكتروني"
             required
           />
+          <div class = "email-error error"></div>
           <div class = "pass-container">
             <input name = "pass"  class ="password first" type="password" placeholder="كلمة السر" required />
             <i id = "firstPass" class="fa-solid fa-eye show-password-icon"></i>
-           
           </div>
+          <div class = "pass-error error"></div>
            
           <div class = "pass-container">
-            <input name = "pass" class ="password second" type="password" placeholder="أدخل كلمة السر مرة أخرى" required />
-            <i id = "secondPass" class="fa-solid fa-eye show-password-icon"></i>
+            <input name = "pass" class = "password second" type="password" placeholder="أدخل كلمة السر مرة أخرى" required />
+            <i id = "secondPass" class = "fa-solid fa-eye show-password-icon"></i>
           </div>
+          <div class = "pass-error error"></div>
+
            
           
           

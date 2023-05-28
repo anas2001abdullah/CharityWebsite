@@ -3,14 +3,14 @@ body {
   background-image: url("images/anas.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 20px;
+  padding: 15px;
   font-family: "Cairo", sans-serif;
 }
 
 h1 {
   font-size: 30px;
   color: #c21010;
-  margin-bottom: 35px;
+  margin-bottom: 25px;
   font-family: "Lemonada", cursive;
   text-align: center;
   font-weight: bolder;
@@ -50,13 +50,13 @@ input[type="tel"] {
   border: 1px solid #292727;
   border-radius: 4px;
   box-sizing: border-box;
-  margin-bottom: 25px;
+  margin: 10px 0px;
   padding: 8px;
   width: 100%;
   display: inline-block;
   background-color: transparent;
   backdrop-filter: blur(25px);
-  color: white;
+  color: black;
   font-family: "Cairo", sans-serif;
 }
 input[type="password"],
@@ -75,7 +75,7 @@ input[type="submit"] {
   cursor: pointer;
   font-size: 20px;
   padding: 5px;
-  width: 70%;
+  width: 60%;
   font-family: "Cairo", sans-serif;
   margin-bottom: 5px;
 }
@@ -86,7 +86,7 @@ input[type="submit"]:hover {
 }
 input::placeholder {
   text-align: right;
-  color: rgb(41, 40, 40);
+  color: rgba(31, 30, 30, 0.837);
 }
 
 
@@ -102,21 +102,25 @@ input::placeholder {
 .pass-container {
   position: relative;
 }
-
+.error{
+  color: #a52121;
+  text-align: right;
+  margin-right: 6px;
+  font-family: 'Readex Pro', sans-serif;
+  font-size: 0.6em;
+  font-weight: bold;
+}
 .sign-up-box {
   border: 1px solid #000000;
   border-radius: 20px;
   box-shadow: 0px 0px 5px #ccc;
   padding: 10px 20px;
-  /* margin: 20px auto; */
   float: right;
   text-align: center;
   background-color: transparent;
   backdrop-filter: blur(7px);
   font-family: "Cairo", sans-serif;
-
   width: 30%;
-
   height: 100%;
   text-align: center;
 }
@@ -124,9 +128,10 @@ input::placeholder {
 .show-password-icon {
   cursor: pointer;
   position: absolute;
-  top: 12px;
+  top: 24px;
   left: 12px;
 }
+
 #firstName,
 #lastName {
   display: inline-block;
@@ -144,7 +149,7 @@ input::placeholder {
   margin-left: 10px;
 }
 #city{
-  width: 90px;
+  width: 80px;
 }
 form {
   margin: 0 auto;
