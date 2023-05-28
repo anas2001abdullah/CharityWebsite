@@ -19,7 +19,7 @@ h1 {
 select {
   font-family: "Cairo", sans-serif;
   background-color: #ffffff;
-  width: 70px;
+  
   min-height: 30px;
   color: #333;
   font-size: 14px;
@@ -89,8 +89,6 @@ input::placeholder {
   color: rgba(31, 30, 30, 0.837);
 }
 
-
-
 .account-type-select {
   float: left;
 }
@@ -146,10 +144,13 @@ input::placeholder {
 #city-label,
 #account-type-label {
   color: rgb(29, 28, 28);
-  margin-left: 10px;
+  margin-left: 5px;
 }
 #city{
   width: 80px;
+}
+#account-type{
+  width: 60px;
 }
 form {
   margin: 0 auto;
