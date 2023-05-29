@@ -1,86 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sign-up</title>
-    <!--Css link-->
-    <link rel="stylesheet" href="sign-up_style.css" />
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Cairo&family=Lemonada&family=Readex+Pro&display=swap" rel="stylesheet">
-     
-    <!-- Font Awsome script -->
-   
-   <link rel="stylesheet" href="font awesome lib/css/all.css">
-    
-  </head>
-  <body>
-      <div class=" sign-up-box">
-        <h1>أهلاً بك في موقعنا</h1>
-        <form action="/" method="post">
-          <input id="lastName" type="text" placeholder="الكنية" dir = "auto" required />
-          <input id="firstName" type="text" placeholder="الاسم" dir = "auto" required />
-          <input id="ID" type="tel" placeholder="الرقم الوطني" required />
-         
-          <input type="tel" id="phone" name="phone" placeholder="رقم الهاتف" pattern="09[0-9]{8}">
-          <input
-            id="email"
-            type="text"
-            placeholder="عنوان البريد الالكتروني"
-            required
-          />
-          <div class = "email-error error"></div>
-          <div class = "pass-container">
-            <input name = "pass"  class ="password first" type="password" placeholder="كلمة السر" required />
-            <i id = "firstPass" class="fa-solid fa-eye show-password-icon"></i>
-          </div>
-          <div class = "pass-error error"></div>
-           
-          <div class = "pass-container">
-            <input name = "pass" class = "password second" type="password" placeholder="أدخل كلمة السر مرة أخرى" required />
-            <i id = "secondPass" class = "fa-solid fa-eye show-password-icon"></i>
-          </div>
-          <div class = "pass-error error"></div>
 
-           
-          
-          
-         
-          <div class="account-type-select">
-            <select name="account-type" id="account-type" >
-              <option value="متبرع" selected>متبرع</option>
-              <option value="محتاج">محتاج</option>
-            </select>
-            <label id="account-type-label" for="account-type"
-              >:اختر نوع الحساب</label
-            >
-          </div>
-          <div class="city-select ">
-            <select name="city" id="city" >
-              <option value="دمشق" selected>دمشق</option>
-              <option value="ريف دمشق">ريف دمشق</option>
-              <option value="اللاذقية">اللاذقية</option>
-              <option value="طرطوس">طرطوس</option>
-              <option value="حمص">حمص</option>
-              <option value="حماة">حماة</option>
-              <option value="حلب">حلب</option>
-              <option value="درعا">درعا</option>
-              <option value="السويداء">السويداء</option>
-              <option value="القنيطرة">القنيطرة</option>
-              <option value="ديرالزور">دير الزور</option>
-              <option value="الرقة">الرقة</option>
-              <option value="إدلب">إدلب</option>
-              <option value="الحسكة">الحسكة</option>
-            </select>
-            <label id="city-label" for="city">:اختر محافظتك</label>
-          </div>
-  
-          <input type="submit" value="إنشاء حساب" />
-        </form>
-      </div>
-   <script src = "sign-up.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign-up</title>
+  <!--Css link-->
+  <link rel="stylesheet" href="sign-up_style.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cairo&family=Coming+Soon&family=Lemonada&family=Libre+Baskerville&family=Montserrat&family=Readex+Pro&family=Sacramento&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awsome script -->
+
+  <link rel="stylesheet" href="font awesome lib/css/all.css" />
+</head>
+
+<body>
+  <div class="main">
+    <div class="left-col">
+      <h1>Welcome</h1>
+      <img class="hand" src="images/20599.jpg" alt="">
+    </div>
+
+    <div class="sign-up-box">
+      <form>
+        <input id="firstName" type="text" placeholder="First name" title="Enter your first name" dir="auto" required />
+        <input id="lastName" name="lastName" type="text" placeholder="Last name" title="Enter your last name" dir="auto"
+          required />
+        <input id="ID" type="tel" name="" placeholder="National ID number" title="Enter your National ID number"
+          required />
+
+        <input type="tel" id="phone" name="phone" placeholder="Phone number" title="Enter your phone number" />
+
+        <div class="IdNumberError error"></div>
+
+        <div class="phoneError error"></div>
+
+        <div class="container">
+          <input id="email" type="text" placeholder="Email address" title="Enter your Email address" required />
+          <i class="fa-solid fa-envelope icon"></i>
+        </div class="container">
+        <div class="email-error error"></div>
+        <div class="container">
+          <input name="pass" class="password first" type="password" placeholder="Password" required />
+          <i id="firstPass" class="fa-solid fa-eye show-password-icon"></i>
+        </div>
+        <div class="pass-error error"></div>
+        <div class="container">
+          <input name="pass" class="password second" type="password" placeholder="Re-enter password" required />
+          <i id="secondPass" class="fa-solid fa-eye show-password-icon"></i>
+        </div>
+        <div class="pass-error error"></div>
+        <div class="inline city-select">
+          <label id="city-label" for="city">Select your city:</label>
+          <select name="city" id="city">
+            <option value="Damascus" selected>Damascus</option>
+            <option value="Rif Dimashq">Rif Dimashq</option>
+            <option value="Lattakia">Lattakia</option>
+            <option value="Tartous">Tartous</option>
+            <option value="Hama">Hama</option>
+            <option value="Homs">Homs</option>
+            <option value="Aleppo">Aleppo</option>
+            <option value="Daraa">Daraa</option>
+            <option value="As-Suwayda">As-Suwayda</option>
+            <option value="Quneitra">Quneitra</option>
+            <option value="Deir ez-Zor">Deir ez-Zor</option>
+            <option value="Raqqa">Raqqa</option>
+            <option value="Idlib">Idlib</option>
+            <option value="Al-Hasakah">Al-Hasakah</option>
+          </select>
+        </div>
+        <div class="inline">
+          <label id="account-type-label" for="account-type">Select account type:</label>
+          <select name="account-type" id="account-type">
+            <option value="Donor" selected>Donor</option>
+            <option value="In Need">In Need</option>
+          </select>
+        </div>
+
+        <input type="submit" value="Register" />
+      </form>
+    </div>
+
+
+  </div>
+  <script src="sign-up.js"></script>
+</body>
+
 </html>

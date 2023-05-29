@@ -33,7 +33,6 @@ input[type="password"] {
 }
 
 input::placeholder {
-  text-align: right;
   color: #efe8e883;
   font-size: 1vw;
 }
@@ -42,7 +41,7 @@ h1 {
   font-size: 2vw;
   color: #efb812;
   margin-bottom: 8%;
-  font-family: "Lemonada", cursive;
+  font-family: 'Lemonada', cursive;
   font-weight: bolder;
 }
 
@@ -59,7 +58,7 @@ a{
   text-decoration: none;
   color: #e82424;
   font-size: 1vw;
-  font-weight: bolder;
+  font-weight: bold;
 }
 
 input[type="submit"] {
@@ -71,23 +70,24 @@ input[type="submit"] {
   font-size: 1.1vw;
   margin-top: 10%;
   padding: 2%;
-  width: 50%;
+  width: 40%;
   height: 20%;
   font-family: "Cairo", sans-serif;
+  font-weight: bold;
 }
 
 input[type="password"],
 input[type="text"] {
-  padding-left: 12%;
+  padding-right: 12%;
 }
 
 .error{
-  color: #E21818;
-  text-align: right;
-  margin-right: 2%;
-  font-family: 'Readex Pro', sans-serif;
-  font-size: 0.8vw;
-  font-weight: bold;
+  color: #6faf16;
+  margin-left: 2%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9vw;
+  font-weight: bolder;
+  text-align: left;
 }
 
 .show-password-icon {
@@ -95,14 +95,15 @@ input[type="text"] {
   position: absolute;
   color: #efe8e8bc;
   top: 40%;
-  left: 4%;
+  right: 4%;
   font-size: 1vw;
 }
+
 .envelop-icon {
   position: absolute;
   color: #efe8e8bc;
   top: 40%;
-  left: 4%;
+  right: 4%;
   font-size: 1vw;
 }
 
