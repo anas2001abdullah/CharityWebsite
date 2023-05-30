@@ -185,9 +185,9 @@ input::placeholder {
     padding: 0px;
   }
   h1 {
-    font-size: 35px;
+    font-size: 25px;
     margin-top: 0px;
-    margin-bottom: 5px;
+  
   }
  .main{
   margin: 0px;
@@ -214,9 +214,9 @@ input::placeholder {
     
   select {
     display: inline-flex;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 10px;
+    padding: 5px;
+    margin: 10px 0px;
+    font-size: 15px;
   }
   input[type="text"],
   input[type="password"],
@@ -225,6 +225,7 @@ input::placeholder {
   }
   input[type="submit"] {
     font-size: 1.25rem;
+    width: 90%;
   }
   .error {
     font-size: 0.7rem;
@@ -235,7 +236,7 @@ input::placeholder {
   
   #city-label,
   #account-type-label {
-    font-size: 13px;
+    font-size: 15px;
     padding: 0px;
   }
 }
