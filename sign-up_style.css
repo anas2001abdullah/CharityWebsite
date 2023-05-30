@@ -1,6 +1,8 @@
 body {
-  background-color: #EAC7C7; 
-  backdrop-filter: blur(10px);
+  padding: 0%;
+  margin: 0%;
+  font-family: "Cairo", sans-serif;
+  position: relative;
   
 }
 
@@ -139,11 +141,15 @@ input::placeholder {
 }
 
 .main{
+  width: 71%;
+  position: absolute;
   font-family: "Cairo", sans-serif;
   margin: 5% 10%;
   display: flex; 
   flex-wrap: wrap;
   box-shadow: 33px 39px 42px rgb(40, 38, 38);
+  top: 3vh;
+  left: 4.5%;
 }
 .left-col, .sign-up-box{
   flex: 1; 
@@ -157,19 +163,47 @@ input::placeholder {
   width: 80%;
   height: 65%;
 }
+.rightBack{
+  background-color:#F7EFE5;
+  float: right;
+  width: 50%;
+  height: 100vh;
+}
+.leftBack{
+  background-color: #7C3E66 ;
+  float: left;
+  width: 50%;
+  height: 100vh;
+  position: relative;
+}
+.shadow{
+  background-color: rgb(70 65 65 / 63%);
+  backdrop-filter: blur(5px);
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+}
+.back-h1{
+  font-size: 4vw;
+  margin-top: 7%;
+  
+}
+.back-img{
+  top: 30%;
+}
 #firstName,
 #lastName,
 #ID,
 #phone,
 .phoneError,
-.IdNumberError {
+.IdNumberError, .firstName-error,.lastName-error {
   display: inline-block;
   width: 47%;
 }
 
 #firstName,
 #ID,
-.IdNumberError {
+.IdNumberError,.firstName-error {
   margin-right: 4%;
 }
 
@@ -182,6 +216,7 @@ input::placeholder {
 
 @media screen and (max-width: 600px) {
   body{
+    margin: 0px;
     padding: 0px;
   }
   h1 {
@@ -190,9 +225,13 @@ input::placeholder {
   
   }
  .main{
+
   margin: 0px;
+  
+   top: 0px;
+    left: 0px;
   width: 100%;
-  height: 110vh;
+  height: 120vh;
   flex-direction: column;
   box-shadow: none;
  }
@@ -211,7 +250,9 @@ input::placeholder {
     width: 75%;
     height: 55%;
   }
-    
+  .leftBack,.rightBack,.shadow{
+    display: none;
+  }
   select {
     display: inline-flex;
     padding: 5px;

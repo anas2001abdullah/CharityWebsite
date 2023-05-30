@@ -8,7 +8,7 @@ body {
 
 input[type="text"],
 input[type="password"] {
-  border: 1px solid #F7EFE5;
+  border: 1px solid #f6f2f2;
   border-radius: 4px;
   box-sizing: border-box;
   margin: 3% 0%;
@@ -23,13 +23,13 @@ input[type="password"] {
 }
 
 input::placeholder {
-  color: #F7EFE5;
+  color: #f6f2f2;
   font-size: 1vw;
 }
 
 h1 {
   
-  color: #F7EFE5;
+  color: #f6f2f2;
   margin-bottom: 3%;
   font-family: 'Libre Baskerville', serif;
   text-align: center;
@@ -39,7 +39,7 @@ h1 {
 p{
   margin-top: 3%;
   margin-bottom: 0px;
-  color: #F7EFE5;
+  color: #f6f2f2;
   font-size: 1vw;
   
 }
@@ -53,7 +53,7 @@ a{
 }
 
 input[type="submit"] {
-  background-color: #F7EFE5;
+  background-color: #f6f2f2;
   border: none;
   border-radius: 20px;
   color: #7C3E66;
@@ -84,7 +84,7 @@ input[type="text"] {
 .show-password-icon {
   cursor: pointer;
   position: absolute;
-  color: #F7EFE5;
+  color: #f6f2f2;
   top: 40%;
   right: 4%;
   font-size: 1vw;
@@ -92,7 +92,7 @@ input[type="text"] {
 
 .envelop-icon {
   position: absolute;
-  color: #F7EFE5;
+  color: #f6f2f2;
   top: 40%;
   right: 4%;
   font-size: 1vw;
@@ -109,7 +109,7 @@ input[type="text"] {
   height: 100vh;
 }
 .leftBack{
-  background-color: #F7EFE5;
+  background-color: #f6f2f2;
   float: left;
   width: 50%;
   height: 100vh;
@@ -129,11 +129,11 @@ input[type="text"] {
   flex-wrap: wrap;
   top: 12vh;
   left: 17%;
-  box-shadow: 25px 30px 70px rgb(40, 38, 38);
+  box-shadow: 25px 30px 70px rgb(27, 26, 26);
 }
 
 .left-main{
-  background-color: #F7EFE5;
+  background-color: #f6f2f2;
   width: 50%;
  position: relative;
   
@@ -152,7 +152,7 @@ input[type="text"] {
 }
 .login{
   font-size: 1.8vw;
-  color: #F7EFE5;
+  color: #f6f2f2;
   margin-top: 13%;
   margin-bottom: 15%;
 }

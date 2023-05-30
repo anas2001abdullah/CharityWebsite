@@ -21,13 +21,14 @@
 </head>
 
 <body>
-  <div class="leftBack">
-    <h1 class = "back-h1">Welcome to HopeHive</h1>
-      <img class="hand" src="images/20599.jpg" alt="">
-  </div>
-
-  <div class="rightBack"></div>
-  <div class = "shadow"></div>
+    <div class="leftBack">
+        <h1 class = "back-h1">Welcome to HopeHive</h1>
+          <img class="hand back-img" src="images/20599.jpg" alt="">
+      </div>
+    
+      <div class="rightBack"></div>
+      <div class = "shadow"></div>
+     
   <div class="main">
     <div class="left-col">
       <h1>Welcome to HopeHive</h1>
@@ -36,14 +37,15 @@
 
     <div class="sign-up-box">
       <form>
-        <input id="firstName" type="text" placeholder="First name" title="Enter your first name" dir="auto" required />
+        <input id="firstName" type="text" placeholder="First name" title="Enter your first name" dir="auto"  />
         <input id="lastName" name="lastName" type="text" placeholder="Last name" title="Enter your last name" dir="auto"
-          required />
-          <div class="firstName-error error"></div>
+           />
+        <div class="firstName-error error"></div>
 
         <div class="lastName-error error"></div>
-        <input id="ID" type="tel" name="" placeholder="National ID number" title="Enter your National ID number"
-          required />
+        
+        <input id="ID" type="tel" name="idNumber" placeholder="National ID number" title="Enter your National ID number"
+           />
 
         <input type="tel" id="phone" name="phone" placeholder="Phone number" title="Enter your phone number" />
 
@@ -51,23 +53,24 @@
 
         <div class="phoneError error"></div>
 
+
         <div class="container">
-          <input id="email" type="text" placeholder="Email address" title="Enter your Email address" required />
+          <input id="email" type="text" placeholder="Email address" title="Enter your Email address"  />
           <i class="fa-solid fa-envelope icon"></i>
         </div class="container">
         <div class="email-error error"></div>
         <div class="container">
-          <input name="pass" class="password first" type="password" placeholder="Password" title="Enter your password" required />
+          <input name="password" class="password first" type="password" placeholder="Password" title="Enter your password"  />
           <i id="firstPass" class="fa-solid fa-eye show-password-icon"></i>
         </div>
         <div class="pass-error error"></div>
         <div class="container">
-          <input name="pass" class="password second" type="password" placeholder="Re-enter password" title="Re-enter the password" required />
+          <input name="passwordTwo" class="password second" type="password" placeholder="Re-enter password" title="Re-enter the password"  />
           <i id="secondPass" class="fa-solid fa-eye show-password-icon"></i>
         </div>
-        <div class="pass-error error"></div>
+        <div class="pass-error-two error"></div>
         <div class="inline city-select">
-          <label id="city-label" for="city">Select your city:</label>
+          <label id="city-label" for="city">City:</label>
           <select name="city" id="city">
             <option value="Damascus" selected>Damascus</option>
             <option value="Rif Dimashq">Rif Dimashq</option>
@@ -86,7 +89,7 @@
           </select>
         </div>
         <div class="inline">
-          <label id="account-type-label" for="account-type">Select account type:</label>
+          <label id="account-type-label" for="account-type">Account type:</label>
           <select name="account-type" id="account-type">
             <option value="Donor" selected>Donor</option>
             <option value="In Need">In Need</option>
@@ -96,8 +99,6 @@
         <input type="submit" value="Register" />
       </form>
     </div>
-
-
   </div>
   <script src="sign-up.js"></script>
 </body>
