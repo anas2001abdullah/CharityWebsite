@@ -15,41 +15,55 @@
     <link rel="stylesheet" href="font awesome lib/css/all.css" />
   </head>
   <body>
-    <div class="login-box">
-      <h1>Log-in</h1>
-      <form>
-        <div class="container">
-          <input
-            id="email"
-            name = "email"
-            type="text"
-            placeholder="Email"
-            title="Enter your Email address"
-            required
-          />
-          <i class="fa-regular fa-envelope envelop-icon"></i>
-        </div>
-
-        <div class="email-error error">Email is incorrect</div>
-        <div class="container">
-          <input
-            type="password"
-            name = "password"
-            class="password"
-            placeholder="Password"
-            title="Enter your password"
-            required
-          />
-          <i
-            id="password-icon"
-            class="fa-regular fa-eye show-password-icon"
-          ></i>
-        </div>
-        <div class="pass-error error">password is incorrect</div>
-        <input type="submit" value="Log-in" />
-        <p>Don't have an account? <a href="sign-up.html">Register</a></p>
-      </form>
+    <div class="leftBack">
+      <h1 class = "site-name back-h1">HopeHive</h1>
+      <img class = "sketch" src="images/simple-removebg.png" alt="sketch.png">
     </div>
+    <div class="rightBack"></div>
+    <div class = "shadow"></div>
+    
+    <div class = "main">
+      <div class = "left-main">
+        <h1 class = "site-name">HopeHive</h1>
+        <img class = "sketch" src="images/simple-removebg.png" alt="sketch.png">
+      </div>
+      <div class="login-box">
+        <h1 class = "login">Log-in</h1>
+        <form>
+          <div class="container">
+            <input
+              id="email"
+              name = "email"
+              type="text"
+              placeholder="Email"
+              title="Enter your Email address"
+              required
+            />
+            <i class="fa-regular fa-envelope envelop-icon"></i>
+          </div>
+  
+          <div class="email-error error"></div>
+          <div class="container">
+            <input
+              type="password"
+              name = "password"
+              class="password"
+              placeholder="Password"
+              title="Enter your password"
+              required
+            />
+            <i
+              id="password-icon"
+              class="fa-regular fa-eye show-password-icon"
+            ></i>
+          </div>
+          <div class="pass-error error"></div>
+          <input type="submit" value="Log-in" />
+          <p>Don't have an account? <a href="sign-up.html">Register</a></p>
+        </form>
+      </div>
+    </div>
+  
     <script src="login.js"></script>
   </body>
 </html>

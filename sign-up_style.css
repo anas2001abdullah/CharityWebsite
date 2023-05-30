@@ -141,7 +141,7 @@ input::placeholder {
 .main{
   font-family: "Cairo", sans-serif;
   margin: 5% 10%;
-  display: flex; /* use flexbox to align the divs side by side */
+  display: flex; 
   flex-wrap: wrap;
   box-shadow: 33px 39px 42px rgb(40, 38, 38);
 }
