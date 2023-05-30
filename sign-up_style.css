@@ -187,6 +187,7 @@ input::placeholder {
   h1 {
     font-size: 35px;
     margin-top: 0px;
+    margin-bottom: 5px;
   }
  .main{
   margin: 0px;
@@ -215,7 +216,7 @@ input::placeholder {
     display: inline-flex;
     margin-left: auto;
     margin-right: auto;
-    font-size: 13px;
+    font-size: 10px;
   }
   input[type="text"],
   input[type="password"],
@@ -234,6 +235,7 @@ input::placeholder {
   
   #city-label,
   #account-type-label {
-    font-size: 15px;
+    font-size: 13px;
+    padding: 0px;
   }
 }
