@@ -116,7 +116,7 @@ input[type="text"] {
   position: relative;
 }
 .shadow{
-  background-color: rgb(70 65 65 / 63%);
+  background-color: rgba(52, 51, 51, 0.63);
   backdrop-filter: blur(5px);
   width: 100%;
   height: 100vh;

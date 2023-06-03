@@ -1,0 +1,54 @@
+.charities-list {
+  color: #7c3e66;
+  background-color: #f6f2f2;
+}
+
+.charities-list p {
+  color: #7d8285;
+}
+
+.charities-list h2 {
+  font-weight: bold;
+  margin-bottom: 40px;
+  padding-top: 40px;
+  color: inherit;
+}
+
+@media (max-width:767px) {
+  .charities-list h2 {
+    margin-bottom: 25px;
+    padding-top: 25px;
+    font-size: 24px;
+  }
+}
+
+.charities-list .intro {
+  font-size: 16px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+
+.charities-list .charities {
+  padding-bottom: 40px;
+}
+
+.charities-list .item {
+  text-align: center;
+  padding-top: 50px;
+  min-height: 425px;
+}
+
+.charities-list .item .name {
+  font-weight: bold;
+  margin-top: 28px;
+  margin-bottom: 8px;
+  color: inherit;
+}
+
+.charities-list .item .description {
+  font-size: 15px;
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+

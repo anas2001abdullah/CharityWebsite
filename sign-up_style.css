@@ -148,7 +148,7 @@ input::placeholder {
   display: flex; 
   flex-wrap: wrap;
   box-shadow: 33px 39px 42px rgb(40, 38, 38);
-  top: 3vh;
+  
   left: 4.5%;
 }
 .left-col, .sign-up-box{

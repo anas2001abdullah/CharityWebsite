@@ -1,0 +1,52 @@
+.navigation-clean-button {
+  background-color: #7c3e66 ;
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  color: #f6f2f2;
+  border-radius: 0;
+  box-shadow: none;
+  border: none;
+  margin-bottom: 0;
+}
+#logout {
+  border-radius: 20px;
+background-color: #f6f2f2 !important;
+color: #7c3e66 !important;
+}
+a {
+  color: #f6f2f2 !important;
+}
+#user-email{
+  margin-right: 1rem;
+  text-decoration: none;
+  color: #465765;
+}
+@media (min-width:768px) {
+  .navigation-clean-button {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+.navbar-brand {
+  font-size: 35px !important;
+  font-family: "Libre Baskerville", serif;
+}
+
+
+.navigation-clean-button .navbar-toggler-icon{
+  color: #f6f2f2 !important;
+}
+.navigation-clean-button .navbar-toggler {
+  border-color: #f6f2f2;
+}
+
+.navigation-clean-button .navbar-toggler:hover, .navigation-clean-button .navbar-toggler:focus {
+  background: none;
+}
+
+.navigation-clean-button .navbar-toggler {
+  color: #f6f2f2;
+}
+
+
+
