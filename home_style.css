@@ -1,0 +1,122 @@
+body {
+  position: relative;
+}
+
+form {
+  margin: 0 auto;
+  padding: 2%;
+}
+.submit {
+  text-align: center !important;
+}
+
+select {
+  font-family: "Cairo", sans-serif;
+  background-color: #7c3e66;
+  color: white;
+  font-size: 1vw;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  text-align: center;
+}
+select:hover {
+  border-color: #999;
+}
+
+select:focus {
+  border-color: #f6f6f6;
+  outline: none;
+}
+label{
+  margin-top: 4%;
+}
+textarea {
+  line-height: 3 !important;
+}
+input[type="text"],
+input[type="tel"],
+textarea {
+  border: 1px solid #7c3e66;
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding: 2%;
+  width: 100%;
+  background-color: transparent;
+  backdrop-filter: blur(25px);
+  color: black;
+  font-family: "Cairo", sans-serif;
+ 
+}
+
+input[type="submit"] {
+  background-color: #7c3e66;
+  border: none;
+  border-radius: 10px;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 3%;
+  margin-top: 5%;
+  font-family: "Cairo", sans-serif;
+}
+
+input[type="submit"]:hover {
+  background-color: #ffbaba;
+  color: black;
+}
+
+.plus-icon {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  border-radius: 5%;
+}
+.shadow {
+  background-color: rgba(60, 57, 57, 0.63);
+  backdrop-filter: blur(8px);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: none;
+}
+.type-select{
+  text-align: center;
+}
+#myForm {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f6f2f2;
+  border-radius: 3%;
+  display: none;
+  width: 45%;
+}
+#closeForm {
+  background-color: transparent;
+  color: #7c3e66;
+  position: absolute;
+  top: 1%;
+  right: 1%;
+  border: none !important;
+}
+#closeForm:hover,
+#closeForm:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+@media screen and (max-width: 640px){
+  #myForm{
+    width: 80%;
+  }
+  label{
+    margin-top: 2%;
+  }
+ textarea{
+  line-height: 2.5 !important;
+ }
+}
