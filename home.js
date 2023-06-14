@@ -28,13 +28,14 @@
       var collapse = new bootstrap.Collapse(navbarCollapse, {
         toggle: false
       });
-      
+    
       var navbarItems = navbarCollapse.querySelectorAll('a');
       
       // Closes responsive menu when a scroll trigger link is clicked
       for (var item of navbarItems) {
         item.addEventListener('click', function (event) {
           collapse.hide();
+          
         });
       }
     }
@@ -50,23 +51,39 @@
         mainNav.classList.remove("navbar-shrink");
       }
     };
-    // Collapse now if page is not at top
+   
     collapseNavbar();
-    // Collapse the navbar when page is scrolled
+   
     document.addEventListener("scroll", collapseNavbar);
   }
 
-})(); // End of use strict
-const button = document.getElementById("myButton");
-const form = document.getElementById("myForm");
-const shadow = document.querySelector(".shadow");
-const close = document.getElementById("closeForm");
+})(); 
 
-button.addEventListener("click", function() {
-  shadow.style.display = "block";
-  form.style.display = "block";
+$("#myButton").click(function() {
+  $(".shadow").fadeIn(500);
+  $("#myForm").fadeIn(500);
 });
-close.addEventListener("click", function() {
-  shadow.style.display = "none";
-  form.style.display = "none";
+$("#closeForm").click(function() {
+  $(".shadow").fadeOut(500);
+  $("#myForm").fadeOut(500);
 });
+var items = document.querySelectorAll('.item');
+
+
+  $('#filterBtn').on('click', function() {
+    var category = $("#filterCriteria").val();
+    
+    $('.item h6').each(function() {
+      if (category === 'All' || $(this).text() === category) {
+        $(this).parent().show();
+       
+      } else {
+        $(this).parent().hide();
+       
+      }
+    });
+  });
+$('.tog').on("click", function(){
+  $("#search-field *").hide();
+});
+

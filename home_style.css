@@ -31,10 +31,14 @@ select:focus {
   outline: none;
 }
 label{
-  margin-top: 4%;
+  margin-top: 3.5%;
 }
 textarea {
   line-height: 3 !important;
+}
+
+input[type="search"]{
+  padding: 7px !important;
 }
 input[type="text"],
 input[type="tel"],
@@ -45,7 +49,7 @@ textarea {
   padding: 2%;
   width: 100%;
   background-color: transparent;
-  backdrop-filter: blur(25px);
+  
   color: black;
   font-family: "Cairo", sans-serif;
  
@@ -58,7 +62,7 @@ input[type="submit"] {
   color: #ffffff;
   cursor: pointer;
   font-size: 1rem;
-  padding: 3%;
+  padding: 2%;
   margin-top: 5%;
   font-family: "Cairo", sans-serif;
 }
@@ -74,6 +78,10 @@ input[type="submit"]:hover {
   cursor: pointer;
   border-radius: 5%;
 }
+#myButton:hover{
+  background-color: #bdb7b7 ;
+
+}
 .shadow {
   background-color: rgba(60, 57, 57, 0.63);
   backdrop-filter: blur(8px);
@@ -85,6 +93,22 @@ input[type="submit"]:hover {
 .type-select{
   text-align: center;
 }
+
+#filterBtn {
+  background-color: #ffbaba;
+  border: none;
+  border-radius: 5px;
+  color: #7c3e66;
+  
+  text-align: center;
+  
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  
+}
+
 #myForm {
   position: fixed;
   top: 50%;
@@ -114,9 +138,12 @@ input[type="submit"]:hover {
     width: 80%;
   }
   label{
-    margin-top: 2%;
+    margin-top: 1.5%;
   }
  textarea{
   line-height: 2.5 !important;
+ }
+ .charities-list{
+  padding-top: 20%;
  }
 }
