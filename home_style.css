@@ -108,7 +108,11 @@ input[type="submit"]:hover {
   cursor: pointer;
   
 }
-
+.notFound{
+  margin: 12% 0px;
+  color: #7e3c66 !important;
+  
+}
 #myForm {
   position: fixed;
   top: 50%;

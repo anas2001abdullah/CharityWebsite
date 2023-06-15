@@ -44,8 +44,8 @@
         </ul>
         <form id = "search-field" class="d-flex me-1" role="search">
         <input class="form-control search-input" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn" type="submit"><i class = "fa fa-search"></i></button></form>
-        <ul class="navbar-nav ms-auto">
+        <button id = "searchBtn" class="btn" type="submit"><i id = "search-icon" class="fa-solid fa-magnifying-glass" style="color: #f6f6f6;"></i></button></form>
+        <ul class="navbar-nav ms-auto"> 
           <li class="nav-item"> <a id="user-email" class="nav-link" href="#">Anas Abdullah</a></li>
           <li class="nav-item"> <a id="logout" class="btn btn-light action-button" role="button" href="#">Log-out</a>
           </li>
@@ -70,10 +70,12 @@
           <button id="filterBtn" class = "p-2">Filter</button>
           
         </div>
+        <p class = "notFound fs-1 text-center"></p>
+       
       <div class="row charities">
         <div class="col-sm-6 col-lg-3 item">
           <img class="img-fluid" src="images/v911-a-01-b.jpg" />
-          <h3 class="name">Charity 1</h3>
+          <h3 class="name">LPC</h3>
           <h6 class="category">Hunger Releif</h6>
           <p class="description">
             Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus.
@@ -83,7 +85,7 @@
         </div>
         <div class="col-sm-6 col-lg-3 item">
           <img class="img-fluid" src="images/v911-a-01-b.jpg" />
-          <h3 class="name">Charity 2</h3>
+          <h3 class="name">Hope</h3>
           <h6 class="category">Health</h6>
           <p class="description">
             Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus.
@@ -93,7 +95,7 @@
         </div>
         <div class="col-sm-6 col-lg-3 item">
           <img class="img-fluid" src="images/v911-a-01-b.jpg" />
-          <h3 class="name">Charity 3</h3>
+          <h3 class="name">Meals</h3>
           <h6 class="category">Hunger Releif</h6>
           <p class="description">
             Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus.
@@ -103,7 +105,7 @@
         </div>
         <div class="col-sm-6 col-lg-3 item">
           <img class="img-fluid" src="images/v911-a-01-b.jpg" />
-          <h3 class="name">Charity 4</h3>
+          <h3 class="name">No Kid Hungry</h3>
           <h6 class="category">Hunger Releif</h6>
           <p class="description">
             Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus.
@@ -113,7 +115,7 @@
         </div>
         <div class="col-sm-6 col-lg-3 item">
           <img class="img-fluid" src="images/v911-a-01-b.jpg" />
-          <h3 class="name">Charity 5</h3>
+          <h3 class="name">No Kid Hungry</h3>
           <h6 class="category">Personal Needs</h6>
           <p class="description">
             Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus.
@@ -123,7 +125,7 @@
         </div>
         <div class="col-sm-6 col-lg-3 item">
           <img class="img-fluid" src="images/v911-a-01-b.jpg" />
-          <h3 class="name">Charity 6</h3>
+          <h3 class="name">The Hunger Project</h3>
           <h6 class="category">Hunger Releif</h6>
           <p class="description">
             Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus.
