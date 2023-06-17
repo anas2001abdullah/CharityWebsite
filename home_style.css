@@ -4,13 +4,13 @@ body {
 
 form {
   margin: 0 auto;
-  padding: 2%;
+  padding: 1.5%;
 }
 .submit {
   text-align: center !important;
 }
 
-select {
+#Charity-type, #filterCriteria {
   font-family: "Cairo", sans-serif;
   background-color: #7c3e66;
   color: white;
@@ -22,16 +22,16 @@ select {
   appearance: none;
   text-align: center;
 }
-select:hover {
+#Charity-type:hover {
   border-color: #999;
 }
 
-select:focus {
+#Charity-type:focus {
   border-color: #f6f6f6;
   outline: none;
 }
 label{
-  margin-top: 3.5%;
+  margin-top: 3%;
 }
 textarea {
   line-height: 3 !important;
@@ -86,9 +86,8 @@ img{
   position: absolute;
   display: none;
 }
-.type-select{
-  text-align: center;
-}
+
+
 
 #filterBtn {
   background-color: #ffbaba;
@@ -126,7 +125,8 @@ img{
 }
 @media screen and (max-width: 640px){
   #myForm{
-    width: 80% !important;
+    width: 90% !important;
+ 
   }
   label{
     margin-top: 1.5%;
@@ -136,5 +136,8 @@ img{
  }
  .charities-list{
   padding-top: 20%;
+ }
+ select{
+  font-size: 15px !important;
  }
 }
