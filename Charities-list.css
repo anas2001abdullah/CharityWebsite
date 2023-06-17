@@ -16,7 +16,7 @@
   color: inherit;
 }
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
   .charities-list h2 {
     margin-bottom: 25px;
     padding-top: 25px;
@@ -30,7 +30,6 @@
   margin: 0 auto;
 }
 
-
 .charities-list .charities {
   padding-bottom: 40px;
 }
@@ -41,45 +40,35 @@
   min-height: 425px;
   transition: transform 0.3s ease-in-out;
 }
-
 .charities-list .item .name {
   font-weight: bold;
   margin-top: 28px;
   margin-bottom: 8px;
   color: inherit;
 }
-
 .charities-list .item .description {
   font-size: 15px;
   margin-top: 15px;
   margin-bottom: 0;
 }
-.charities-list .item img{
+.charities-list .item img {
   border-radius: 5%;
 }
 .charities-list .item:not(.add-charity-item):hover {
-  
   transform: scale(1.1);
-  
 }
-.active
-{
+.active {
   animation: pulse 0.4s linear;
 }
 @keyframes pulse {
   0% {
     transform: scale(1.1);
-   
   }
-  
   50% {
     transform: scale(1);
-    
   }
-  
   100% {
     transform: scale(1.1);
-   
   }
 }
 
@@ -89,9 +78,8 @@
   cursor: pointer;
   border-radius: 5%;
 }
-#myButton:hover{
-  background-color: #bdb7b7cb ;
-
+#myButton:hover {
+  background-color: #bdb7b7cb;
 }
 #myForm {
   position: fixed;

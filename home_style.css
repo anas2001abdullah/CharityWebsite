@@ -10,7 +10,8 @@ form {
   text-align: center !important;
 }
 
-#Charity-type, #filterCriteria {
+#Charity-type,
+#filterCriteria {
   font-family: "Cairo", sans-serif;
   background-color: #7c3e66;
   color: white;
@@ -30,14 +31,14 @@ form {
   border-color: #f6f6f6;
   outline: none;
 }
-label{
+label {
   margin-top: 3%;
 }
 textarea {
   line-height: 3 !important;
 }
 
-input[type="search"]{
+input[type="search"] {
   padding: 7px !important;
 }
 input[type="text"],
@@ -49,10 +50,9 @@ textarea {
   padding: 2%;
   width: 100%;
   background-color: transparent;
-  
+
   color: black;
   font-family: "Cairo", sans-serif;
- 
 }
 
 input[type="submit"] {
@@ -72,7 +72,7 @@ input[type="submit"]:hover {
   color: black;
 }
 
-img{
+img {
   max-width: 100%;
   max-height: 50%;
   min-width: 100%;
@@ -87,26 +87,22 @@ img{
   display: none;
 }
 
-
-
 #filterBtn {
   background-color: #ffbaba;
   border: none;
   border-radius: 5px;
   color: #7c3e66;
-  
+
   text-align: center;
-  
+
   display: inline-block;
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
-  
 }
-.notFound{
+.notFound {
   margin: 12% 0px;
   color: #7e3c66 !important;
-  
 }
 
 #closeForm {
@@ -123,21 +119,20 @@ img{
   text-decoration: none;
   cursor: pointer;
 }
-@media screen and (max-width: 640px){
-  #myForm{
+@media screen and (max-width: 640px) {
+  #myForm {
     width: 90% !important;
- 
   }
-  label{
+  label {
     margin-top: 1.5%;
   }
- textarea{
-  line-height: 2.5 !important;
- }
- .charities-list{
-  padding-top: 20%;
- }
- select{
-  font-size: 15px !important;
- }
+  textarea {
+    line-height: 2.5 !important;
+  }
+  .charities-list {
+    padding-top: 20%;
+  }
+  select {
+    font-size: 15px !important;
+  }
 }

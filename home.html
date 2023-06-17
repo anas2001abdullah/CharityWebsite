@@ -22,7 +22,7 @@
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 </head>
 <!-- Font Awesome -->
-<link rel="stylesheet" href="font awesome lib/css/all.css" />
+<link rel="stylesheet" href="font awesome lib/css/all.min.css" />
 </head>
 
 <body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="72">
@@ -202,7 +202,7 @@
         </div>
         <div class="row row-cols-2">
           <div class="col">
-            <label class="form-label" for="bankAccount">Bank account number:</label>
+            <label class="form-label" for="bankAccount">Bank account:</label>
             <input class="form-control" type="text" id="bankAccount" name="bankAccount" required>
           </div>
           <div class="col">
@@ -213,34 +213,35 @@
               <option value="Personal-need">Personal Needs</option>
             </select>
           </div>
-        </div>
-      </div>
-
-      <label class="form-label" for="description">Description:</label>
-      <textarea class="form-control-sm" id="description" name="description" required></textarea>
-      <div class="container">
-        <div class="row row-cols-2">
           <div class="col">
-
-            <label class="form-label me-3" for="uploadImage">Upload your logo:</label>
-            <input type="file" class="form-control-sm" name="uploadImage" id="uploadImage">
+            <label class="form-label me-3" for="uploadImage">Your Logo:</label>
+            <input class="form-control-sm" type="file"  name="uploadImage" id="uploadImage">
           </div>
           <div class="col">
-            <label class="form-label me-3" for="uploadLicense">Upload your License:</label>
-            <input type="file" class="form-control-sm" name="uploadLicense" id="uploadLicense">
+            <label class="form-label me-3" for="uploadLicense">Your License:</label>
+            <input class="form-control-sm" type="file"  name="uploadLicense" id="uploadLicense">
           </div>
         </div>
-      </div>
-
-
-
-
-      <div class="container">
-        <div class="row">
+      <div class="row row-cols-1">
+        <div class = "col">
+          <label class="form-label" for="description">Description:</label>
+           <textarea class="form-control-sm" id="description" name="description" required></textarea>
+        </div>
+     
           <div class="col-md-7 mx-auto submit">
             <input type="submit" value="Add Charity">
           </div>
         </div>
+      </div>
+
+      
+      <div class="container">
+        <div class="row row-cols-2">
+         
+        </div>
+      </div>
+      <div class="container">
+        
       </div>
 
     </form>
