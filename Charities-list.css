@@ -37,6 +37,7 @@
   text-align: center;
   padding-top: 50px;
   min-height: 425px;
+  transition: transform 0.3s ease-in-out;
 }
 
 .charities-list .item .name {
@@ -53,4 +54,50 @@
 }
 .charities-list .item img{
   border-radius: 5%;
+}
+.charities-list .item:not(.add-charity-item):hover {
+  
+  transform: scale(1.1);
+  
+}
+.active
+{
+  animation: pulse 0.4s linear;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1.1);
+   
+  }
+  
+  50% {
+    transform: scale(1);
+    
+  }
+  
+  100% {
+    transform: scale(1.1);
+   
+  }
+}
+
+.plus-icon {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  border-radius: 5%;
+}
+#myButton:hover{
+  background-color: #bdb7b7cb ;
+
+}
+#myForm {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f6f2f2;
+  border-radius: 3%;
+  display: none;
+  width: 45%;
 }

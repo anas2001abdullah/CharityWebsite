@@ -61,85 +61,88 @@
 })();
 
 $("#myButton").click(function () {
-  $(".shadow").fadeIn(500);
-  $("#myForm").fadeIn(500);
+  $(".shadow").fadeIn(25);
+  $("#myForm").fadeIn(400);
 });
+
 $("#closeForm").click(function () {
-  $(".shadow").fadeOut(500);
-  $("#myForm").fadeOut(500);
-});
-var items = document.querySelectorAll(".item");
-
-$("#filterBtn").on("click", function () {
-  let filterEmpty = 1;
-  var category = $("#filterCriteria").val();
-
-  $(".item h6").each(function () {
-    if (category === "All" || $(this).text() === category) {
-      $(this).parent().show();
-      filterEmpty = 0;
-    } else {
-      $(this).parent().hide();
-    }
-  });
-  if(filterEmpty){
-    $(".notFound").show();
-    $(".notFound").html('No charities match your filter <i class="fa-solid fa-filter"></i>');
-  } else {
-    $(".notFound").hide();
-  }
-});
-// Hide the search input on mobile screen
-// if ($(".navbar-toggler").css("display") === "none") {
-//   $("#search-field *").show();
-// } else {
-//   $("#search-field *").hide();
-// }
-$(".notFound").hide();
-
-$(".search-input").on("keyup", function () {
-  let searchEmpty = 1;
-  var input = $(this).val().toLowerCase();
-  $(".item h3").each(function () {
-    if ($(this).text().toLowerCase().indexOf(input) >= 0) {
-      $(this).parent().show();
-      searchEmpty = 0;
-    } else {
-      $(this).parent().hide();
-    }
-  });
-  if(searchEmpty){
-    $(".notFound").show();
-    $(".notFound").html('No charities match your search <i class="fa fa-search-minus"></i>');
-  } else {
-    $(".notFound").hide();
-  }
+  $(".shadow").fadeOut(400);
+  $("#myForm").fadeOut(50);
 });
 
-$("#search-field").submit(function (event) {
-  let searchEmpty = 1;
+$("#search-input").on("keyup", handleSearchFilterChange);
+$("#filterCriteria").on("change", handleSearchFilterChange);
+$("#search-field").submit(function (event){
   event.preventDefault();
   $("#search-icon").addClass("fa-beat");
-  var inText = $(".search-input").val().toLowerCase();
-  $(".item h3").each(function () {
-    if ($(this).text().toLowerCase().indexOf(input) >= 0 || input ===  "") {
-      $(this).parent().show();
-      searchEmpty = 0;
+  handleSearchFilterChange;
+  setTimeout(function(){$("#search-icon").removeClass("fa-beat");}, 3000);
+
+});
+
+function handleSearchFilterChange(){
+  var filterResultEmpty = 1;
+  var searchResultEmpty = 1;
+  var search_filter_Result = 1;
+  $(".item").each(function () {
+    var category = $("#filterCriteria").val();
+    var input = $("#search-input").val().toLowerCase();
+    var shouldShow = 1;
+    var this_h6 = $(this).children('h6');
+    if (category === "All" || this_h6.text() === category) {
+      filterResultEmpty = 0;
     } else {
-      $(this).parent().hide();
+     shouldShow = 0;
+    }
+
+    var this_h3 = $(this).children('h3');
+    if (this_h3.text().toLowerCase().indexOf(input) >= 0 || input ===  "") {
+        searchResultEmpty = 0;
+      } else {
+       shouldShow = 0;
+      }
+    if(shouldShow) {
+        $(this).show();
+        search_filter_Result = 0;
+    } else {
+        $(this).hide();
     }
   });
-  if(searchEmpty){
+  
+  if(searchResultEmpty){
     $(".notFound").show();
     $(".notFound").html('No charities match your search <i class="fa fa-search-minus"></i>');
+  }
+  else if(filterResultEmpty){
+    $(".notFound").show();
+    $(".notFound").html('No charities match your filter <i class="fa-solid fa-filter"></i>');
+  } else if(search_filter_Result){
+    $(".notFound").show();
+    $(".notFound").html('No charities match your Search with that filter');
   } else {
     $(".notFound").hide();
   }
-  setTimeout(function(){$("#search-icon").removeClass("fa-beat");}, 3000);
-});
+}
+
+
 if($(".item").length === 1){
   $(".notFound").show();
   $(".notFound").html('There is no charities at the moment <i class="fa-solid fa-box-open"></i>');
 } else {
   $(".notFound").hide();
 }
+
+
+let isClicked = false;
+$(".item:not(.add-charity-item)").mousedown(function () { 
+  isClicked = true;
+});
+$(".item:not(.add-charity-item)").mouseup(function () { 
+  if (isClicked) {
+    isClicked = false;
+    $(this).addClass("active");
+    setTimeout(() => {
+     $(this).removeClass("active");
+    }, 500);
+  }
+});
