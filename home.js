@@ -76,12 +76,12 @@ function handleSearchFilterChange() {
   var filterResultEmpty = 1;
   var searchResultEmpty = 1;
   var search_filter_Result = 1;
-  $(".item:not(.add-charity-item)").each(function () {
+  $(".item").each(function () {
     var category = $("#filterCriteria").val();
     var input = $("#search-input").val().toLowerCase();
     var shouldShow = 1;
     var this_h6 = $(this).children("h6");
-    if (category === "All" || this_h6.text() === category) {
+    if (category === "All" || this_h6.text() === category || $(this).hasClass("add-charity-item")) {
       filterResultEmpty = 0;
     } else {
       shouldShow = 0;
