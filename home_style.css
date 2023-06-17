@@ -130,7 +130,7 @@ img {
     line-height: 2.5 !important;
   }
   .charities-list {
-    padding-top: 20%;
+    padding-top: 25% !important;
   }
   select {
     font-size: 15px !important;

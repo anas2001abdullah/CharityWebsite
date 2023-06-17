@@ -76,7 +76,7 @@ function handleSearchFilterChange() {
   var filterResultEmpty = 1;
   var searchResultEmpty = 1;
   var search_filter_Result = 1;
-  $(".item").each(function () {
+  $(".item:not(.add-charity-item)").each(function () {
     var category = $("#filterCriteria").val();
     var input = $("#search-input").val().toLowerCase();
     var shouldShow = 1;
