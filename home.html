@@ -29,7 +29,7 @@
   <div class="shadow"></div>
   <nav id="mainNav" class="navbar navbar-light navbar-expand-lg fixed-top navigation-clean-button ">
     <div class="container">
-      <a class="navbar-brand" href="#">HopeHive</a>
+      <a class="navbar-brand" href="home.html">HopeHive</a>
       <button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navbarResponsive"
         aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="fa fa-solid fa-bars tog"></span>
@@ -170,41 +170,42 @@
         </div>
       </div>
     </div>
-    <footer id="main-footer" class="footer">
-      <div class="social">
-        <a href=""><i class="fa-brands fa-facebook-f"></i></a><a href=""><i class="fa-brands fa-twitter"></i></a><a
-          href=""><i class="fa-brands fa-instagram"></i></a>
-      </div>
-      <ul class="list-inline">
-        <li class="list-inline-item"><a href="">About</a></li>
-        <li class="list-inline-item"><a href="">Terms</a></li>
-        <li class="list-inline-item"><a href="">Privacy Policy</a></li>
-      </ul>
-      <p class="copyright">HopeHive © 2023</p>
-      <div class="scroll-to-top position-fixed rounded">
-        <a class="text-center d-block rounded text-white" href="#page-top"><i class="fa fa-chevron-up"></i></a>
-    </footer>
+    
   </section>
+  <footer id="main-footer" class="footer">
+    <div class="social">
+      <a href=""><i class="fa-brands fa-facebook-f"></i></a><a href=""><i class="fa-brands fa-twitter"></i></a><a
+        href=""><i class="fa-brands fa-instagram"></i></a>
+    </div>
+    <ul class="list-inline">
+      <li class="list-inline-item"><a href="">About</a></li>
+      <li class="list-inline-item"><a href="">Terms</a></li>
+      <li class="list-inline-item"><a href="">Privacy Policy</a></li>
+    </ul>
+    <p class="copyright">HopeHive © 2023</p>
+    <div class="scroll-to-top position-fixed rounded">
+      <a class="text-center d-block rounded text-white" href="#page-top"><i class="fa fa-chevron-up"></i></a>
+  </footer>
   <div id="myForm" class="add-charity p-3">
     <button id="closeForm"><i class="fa-solid fa-xmark"></i></button>
     <form>
       <div class="container">
-        <div class="row">
-          <div class="col-sm-1 col-lg-6">
+        <div class="row row-cols-2">
+          <div class="col">
             <label class="form-label" for="name">Charity Name:</label>
             <input class="form-control" type="text" id="name" name="name" required>
           </div>
-          <div class="col-sm-1 col-lg-6">
+          <div class="col">
             <label class="form-label" for="phone">Phone Number:</label>
             <input class="form-control" type="tel" id="phone" name="phone" required>
           </div>
         </div>
-        <div class="row">
-          <div class="col-sm-1 col-lg-6">
+        <div class="row row-cols-2">
+          <div class="col">
             <label class="form-label" for="bankAccount">Bank account number:</label>
             <input class="form-control" type="text" id="bankAccount" name="bankAccount" required>
           </div>
-          <div class="col-sm-1 col-lg-6 ">
+          <div class="col">
             <label id="charity-type-label" class="form-label d-block" for="Charity-type">Charity type:</label>
             <select id="Charity-type" class="p-1 form-control"  name="Charity-type">
               <option value="Hunger Releif" selected>Hunger Releif</option>
@@ -218,13 +219,13 @@
       <label class="form-label" for="description">Description:</label>
       <textarea class="form-control-sm" id="description" name="description" required></textarea>
       <div class="container">
-        <div class="row">
-          <div class="col-sm-1 col-lg-6">
+        <div class="row row-cols-2">
+          <div class="col">
 
             <label class="form-label me-3" for="uploadImage">Upload your logo:</label>
             <input type="file" class="form-control-sm" name="uploadImage" id="uploadImage">
           </div>
-          <div class="col-sm-1 col-lg-6">
+          <div class="col">
             <label class="form-label me-3" for="uploadLicense">Upload your License:</label>
             <input type="file" class="form-control-sm" name="uploadLicense" id="uploadLicense">
           </div>

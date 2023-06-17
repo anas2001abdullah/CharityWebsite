@@ -1,6 +1,8 @@
 .charities-list {
   color: #7c3e66;
   background-color: #f6f2f2;
+  padding-left: 3%;
+  padding-right: 3%;
 }
 
 .charities-list p {

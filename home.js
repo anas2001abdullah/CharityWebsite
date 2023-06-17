@@ -1,5 +1,3 @@
-(function () {
-  "use strict"; // Start of use strict
 
   var scrollToTop = document.querySelector(".scroll-to-top");
 
@@ -7,7 +5,6 @@
     // Scroll to top button appear
     window.addEventListener("scroll", function () {
       var scrollDistance = window.pageYOffset;
-
       if (scrollDistance > 100) {
         scrollToTop.style.display = "block";
       } else {
@@ -27,17 +24,20 @@
       });
 
       var navbarItems = navbarCollapse.querySelectorAll("a");
-
-      // Closes responsive menu when a scroll trigger link is clicked
+      
       for (var item of navbarItems) {
-        item.addEventListener("click", function (event) {
+        item.addEventListener("click", function () {
           collapse.hide();
         });
       }
+      var searchBtn = document.querySelector("#searchBtn");
+      searchBtn.addEventListener("click", function(){
+        collapse.hide();
+      })
     }
 
     // Collapse Navbar
-    var collapseNavbar = function () {
+   function  collapseNavbar () {
       var scrollTop =
         window.pageYOffset !== undefined
           ? window.pageYOffset
@@ -58,7 +58,6 @@
 
     document.addEventListener("scroll", collapseNavbar);
   }
-})();
 
 $("#myButton").click(function () {
   $(".shadow").fadeIn(25);
@@ -77,7 +76,6 @@ $("#search-field").submit(function (event){
   $("#search-icon").addClass("fa-beat");
   handleSearchFilterChange;
   setTimeout(function(){$("#search-icon").removeClass("fa-beat");}, 3000);
-
 });
 
 function handleSearchFilterChange(){
