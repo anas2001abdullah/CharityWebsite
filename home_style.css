@@ -54,6 +54,10 @@ textarea {
   color: black;
   font-family: "Cairo", sans-serif;
 }
+.upload-div
+{
+  overflow: hidden;
+}
 
 input[type="submit"] {
   background-color: #7c3e66;
