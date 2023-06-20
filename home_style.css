@@ -72,12 +72,6 @@ input[type="submit"]:hover {
   color: black;
 }
 
-img {
-  max-width: 100%;
-  max-height: 50%;
-  min-width: 100%;
-  min-height: 50%;
-}
 .shadow {
   background-color: rgba(60, 57, 57, 0.63);
   backdrop-filter: blur(8px);
