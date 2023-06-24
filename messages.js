@@ -11,3 +11,43 @@ $(".item:not(.add-charity-item)").mouseup(function () {
     }, 500);
   }
 });
+$("#search-input").on("keyup", handleSearchChange);
+
+$("#search-field").submit(function (event) {
+  event.preventDefault();
+  $("#search-icon").addClass("fa-beat");
+  handleSearchFilterChange;
+  setTimeout(function () {
+    $("#search-icon").removeClass("fa-beat");
+  }, 3000);
+});
+function handleSearchChange() {
+  var searchResultEmpty = 1;
+  $(".item").each(function () {
+    var input = $("#search-input").val().toLowerCase();
+    var shouldShow = 1;
+    var this_h3 = $(this).children("h3");
+    if (this_h3.text().toLowerCase().indexOf(input) >= 0 || input === "") {
+      $(this).show();
+      searchResultEmpty = 0;
+    } else {
+      $(this).hide();
+    }
+  });
+  if (searchResultEmpty) {
+    $(".notFound").show();
+    $(".notFound").html(
+      'No messages match your search <i class="fa fa-search-minus"></i>'
+    );
+  } else {
+    $(".notFound").hide();
+  }
+}
+if ($(".item").length === 0) {
+  $(".notFound").show();
+  $(".notFound").html(
+    'There are no messages at the moment <i class="fa-solid fa-box-open"></i>'
+  );
+} else {
+  $(".notFound").hide();
+}

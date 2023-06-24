@@ -67,7 +67,7 @@ function handleSearchFilterChange() {
 if ($(".item").length === 1) {
   $(".notFound").show();
   $(".notFound").html(
-    'There is no charities at the moment <i class="fa-solid fa-box-open"></i>'
+    'There are no charities at the moment <i class="fa-solid fa-box-open"></i>'
   );
 } else {
   $(".notFound").hide();

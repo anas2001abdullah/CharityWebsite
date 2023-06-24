@@ -61,7 +61,10 @@
 }
 
 
-
+.notFound {
+  margin: 12% 0px;
+  color: #7e3c66 !important;
+}
 @keyframes pulse {
   0% {
     transform: scale(1.1);

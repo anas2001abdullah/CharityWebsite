@@ -42,12 +42,13 @@
   border-radius: 50%;
   border: 1px solid #ccc;
   margin: 0 8px;
-  color: inherit;
+ 
   opacity: 0.75;
 }
 
 .footer .social > a:hover {
   opacity: 0.9;
+
 }
 
 .footer .copyright {
