@@ -33,6 +33,10 @@
   background-color: #f6f2f2 !important;
   color: #7c3e66 !important;
 }
+#logout:hover{
+  background-color: #ffbaba !important;
+  color: #7c3e66 !important;
+}
 a {
   color: #f6f2f2 !important;
 }
@@ -41,12 +45,7 @@ a {
   text-decoration: none;
   color: #465765;
 }
-@media (min-width: 768px) {
-  .navigation-clean-button {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-  }
-}
+
 .navbar-brand {
   font-size: 35px !important;
   font-family: "Libre Baskerville", serif;
@@ -76,6 +75,9 @@ a {
 }
 #mainNav .navbar-brand {
   color: #f6f2f2;
+}
+#mainNav a:not(#logout):hover{
+  color: #ffbaba !important;
 }
 #mainNav .navbar-nav {
   margin-top: 1rem;
@@ -128,5 +130,11 @@ a {
   }
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.5em;
+  }
+}
+@media (min-width: 768px) {
+  .navigation-clean-button {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 }

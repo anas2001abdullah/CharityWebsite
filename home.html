@@ -187,23 +187,26 @@
       <a class="text-center d-block rounded text-white" href="#page-top"><i class="fa fa-chevron-up"></i></a>
   </footer>
   <div id="myForm" class="add-charity p-0">
-    <button id="closeForm"><i class="fa-solid fa-xmark"></i></button>
     <form>
       <div class="container">
         <div class="row row-cols-2">
-          <div class="col">
+          <div class="col position-relative">
             <label class="form-label" for="name">Charity Name:</label>
             <input class="form-control" type="text" id="name" name="name" required>
+            <span class="error-message">Please enter a valid name</span>
           </div>
-          <div class="col">
+          <div class="col position-relative">
+            <button id="closeForm"><i class="fa-solid fa-xmark"></i></button>
             <label class="form-label" for="phone">Phone Number:</label>
             <input class="form-control" type="tel" id="phone" name="phone" required>
+            <span class="error-message">Please enter a valid phone number</span>
           </div>
         </div>
         <div class="row row-cols-2">
-          <div class="col">
+          <div class="col position-relative">
             <label class="form-label" for="bankAccount">Bank account:</label>
             <input class="form-control" type="text" id="bankAccount" name="bankAccount" required>
+            <span class="error-message">Please enter a valid phone number</span>
           </div>
           <div class="col">
             <label id="charity-type-label" class="form-label d-block" for="Charity-type">Charity type:</label>
@@ -213,19 +216,22 @@
               <option value="Personal-need">Personal Needs</option>
             </select>
           </div>
-          <div class="col upload-div">
+          <div class="col position-relative ">
             <label class="form-label me-3" for="uploadImage">Your Logo:</label>
             <input class="form-control-sm" type="file" accept="image/*" name="uploadImage" id="uploadImage">
+            <span class="error-message">Please upload a valid image</span>
           </div>
-          <div class="col">
+          <div class="col position-relative">
             <label class="form-label" for="uploadLicense">Your License:</label>
             <input class="form-control-sm" type="file" accept="image/*" name="uploadLicense" id="uploadLicense">
+            <span class="error-message">Please upload a valid image</span>
           </div>
         </div>
       <div class="row row-cols-1">
-        <div class = "col">
+        <div class = "col position-relative">
           <label class="form-label" for="description">Description:</label>
            <textarea class="form-control-sm" id="description" name="description" required></textarea>
+           <span class="desc-error-message error-message">Please enter a valid description</span>
         </div>
           <div class="col-md-7 mx-auto submit">
             <input type="submit" value="Add Charity">

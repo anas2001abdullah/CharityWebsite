@@ -2,6 +2,7 @@
   padding: 40px 0;
   background-color: #7c3e66;
   color: #f6f2f2;
+  margin-top: auto;
 }
 
 .footer ul {
@@ -25,6 +26,7 @@
 
 .footer ul a:hover {
   opacity: 1;
+  color: #ffbaba !important;
 }
 
 .footer .social {
@@ -48,7 +50,8 @@
 
 .footer .social > a:hover {
   opacity: 0.9;
-
+  color: #ffbaba !important;
+border-color: #ffbaba !important;
 }
 
 .footer .copyright {

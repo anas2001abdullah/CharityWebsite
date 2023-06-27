@@ -9,6 +9,7 @@ $(".item:not(.add-charity-item)").mouseup(function () {
     setTimeout(() => {
       $(this).removeClass("active");
     }, 500);
+    window.location.href = "message-details.html";
   }
 });
 $("#search-input").on("keyup", handleSearchChange);
@@ -34,7 +35,12 @@ function handleSearchChange() {
       $(this).hide();
     }
   });
-  if (searchResultEmpty) {
+  if ($(".item").length === 0) {
+    $(".notFound").show();
+    $(".notFound").html(
+      'There are no messages at the moment <i class="fa-solid fa-box-open"></i>'
+    );
+  } else if (searchResultEmpty) {
     $(".notFound").show();
     $(".notFound").html(
       'No messages match your search <i class="fa fa-search-minus"></i>'

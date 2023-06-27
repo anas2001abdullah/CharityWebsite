@@ -47,7 +47,12 @@ function handleSearchFilterChange() {
       $(this).hide();
     }
   });
-  if (searchResultEmpty) {
+  if ($(".item").length === 1) {
+    $(".notFound").show();
+    $(".notFound").html(
+      'There are no charities at the moment <i class="fa-solid fa-box-open"></i>'
+    );
+  } else if (searchResultEmpty) {
     $(".notFound").show();
     $(".notFound").html(
       'No charities match your search <i class="fa fa-search-minus"></i>'
@@ -85,4 +90,17 @@ $(".item:not(.add-charity-item)").mouseup(function () {
       $(this).removeClass("active");
     }, 500);
   }
+});
+$(".error-message").each(function(){
+  if($(this).text() === ''){
+      $(this).fadeOut();
+  } else {
+    $(this).fadeIn();
+  }
+})
+$('input').on('keyup', function() {
+  $(this).next('.error-message').hide();
+});
+$('textarea').on('keyup', function() {
+  $(this).next('.error-message').hide();
 });

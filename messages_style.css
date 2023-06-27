@@ -1,8 +1,15 @@
+body{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f6f2f2 !important;
+}
 .messages-list {
   color: #7c3e66;
   background-color: #f6f2f2;
   padding-left: 6%;
   padding-right: 6%;
+
   
 }
 .messages-list .intro {

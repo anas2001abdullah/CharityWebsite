@@ -1,0 +1,48 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.message-details form {
+  margin: 0px 15% !important;
+}
+.message-details {
+  flex: 1;
+  padding-top: 150px;
+}
+.message-details p {
+  background-color: #fffaf4 !important;
+  color: #3c033d;
+  border: solid #7c3e66;
+}
+
+.from,
+.subject {
+  width: max-content !important;
+}
+.license {
+  border: solid #7c3e66;
+}
+label {
+  color: #7c3e66;
+  font-weight: bolder;
+}
+#confirm {
+  background-color: #7c3e66;
+  color: #f6f6f6;
+}
+#confirm:hover {
+  background-color: #ffe7cc;
+  color: #7c3e66;
+}
+#reject {
+  border: solid #7c3e66;
+  color: #7c3e66;
+  background-color: #f6f6f6;
+}
+#reject:hover {
+  background-color: #c85c8e;
+  color: #f6f6f6;
+  border-color: #c85c8e;
+}
