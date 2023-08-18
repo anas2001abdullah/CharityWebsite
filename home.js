@@ -29,7 +29,7 @@ function handleSearchFilterChange() {
   var search_filter_Result = 1;
   $(".item").each(function () {
     var category = $("#filterCriteria").val();
-    var input = $("#search-input").val().toLowerCase();
+    var input = $("#search-input").val().toLowerCase().trim();
     var shouldShow = 1;
     var this_h6 = $(this).children("h6");
     if (category === "All" || this_h6.text() === category || $(this).hasClass("add-charity-item")) {
@@ -92,6 +92,7 @@ $(".item").mouseup(function () {
     setTimeout(() => {
       $(this).removeClass("active");
     }, 500);
+    window.location.href = "Health-Charity-page.html"
   }
 });
 $(".error-message").each(function(){
