@@ -15,7 +15,7 @@
     <!-- My Style -->
     <link rel="stylesheet" href="message-details_style.css" />
     <link rel="stylesheet" href="Footer.css" />
-    <link rel="stylesheet" href="NavigationBar.css" />
+    <link rel="stylesheet" href="NavigationBar.css"/>
     <!-- Bootstrap CDN-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
@@ -54,7 +54,7 @@
             </div>
         </div>
     </nav>
-
+<div></div>
     <div class="message-details">
         <div class="container">
             <form>
@@ -79,12 +79,12 @@
                 <div class="form-group w-100">
                     <label class = "d-block" for="icense">License:</label>
                     <a href="images/v911-a-01-b.jpg" download>
-                        <img name = "license" class = "w-100 rounded-3 license" src="images/v911-a-01-b.jpg" alt="">
+                        <img name = "license" class = "w-100 rounded-3 license" src="images/v911-a-01-b.jpg" alt="" title="Click to download">
                     </a>
-                    
                 </div>
                 <button type="submit" class="btn mt-3 me-3 mb-3" id="confirm"><i class="fa-regular fa-circle-check me-2"></i>Confirm</button>
                 <button type="button" class="btn mt-3 mb-3" id="reject"><i class="fa-solid fa-rectangle-xmark me-2"></i>Reject</button>
+                <h1 class="purble mb-3 mt-3">This charity was accepted <i class="fa-regular fa-circle-check me-2"></i></h1>
             </form>
         </div>
 
@@ -116,6 +116,11 @@
         crossorigin="anonymous"></script>
     <!-- My JS -->
     <script src="navigationBar.js"></script>
+    <script>
+        
+        const c = "Hello <br> Yazan";
+        $(".content").html(c);
+    </script>
     
 </body>
 

@@ -4,7 +4,6 @@
   padding-left: 3%;
   padding-right: 3%;
   position: relative;
-
 }
 
 .charities-list p {
@@ -54,18 +53,28 @@
   min-width: 100%;
   min-height: 50%;
 }
-.charities-list .item:not(.add-charity-item):hover {
+.charities-list .item:hover {
   transform: scale(1.1);
 }
 .active {
   animation: pulse 0.4s linear;
 }
-
+.arrowIcon{
+  font-size: medium;
+  margin-left: 1%;
+}
+.add-charity-form{
+  display: none;
+}
 .plus-icon {
   width: 100%;
   height: 100%;
   cursor: pointer;
   border-radius: 5%;
+}
+.charities-list .add-charity-item{
+  min-height: 425px;
+  padding-top: 50px;
 }
 #myButton{
   cursor: cell;
@@ -83,7 +92,23 @@
   display: none;
   width: 45%;
 }
-
+.hint{
+  color: #7c3e66;
+}
+.hint a {
+  color: #ef9c9c !important;
+}
+.continue{
+  background-color: #7c3e66;
+  border-radius: 5px;
+  color: #f6f2f2;
+  
+}
+.continue:hover{
+  background-color: #ffbaba;
+  color: #7c3e66;
+  
+}
 @keyframes pulse {
   0% {
     transform: scale(1.1);

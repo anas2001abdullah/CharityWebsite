@@ -38,14 +38,22 @@ input:focus + .error-message {
 textarea:focus + .error-message {
   display: none;
 }
+.description{
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
 .desc-error-message{
   left: 2%;
   width: 30%;
 }
-form {
+.add-charity form {
   margin: 0 auto;
   padding: 1%;
   overflow: hidden;
+  display: none;
 }
 .submit {
   text-align: center !important;
@@ -79,9 +87,7 @@ textarea {
   line-height: 3 !important;
 }
 
-input[type="search"] {
-  padding: 7px !important;
-}
+
 input[type="text"],
 input[type="tel"],
 textarea {
@@ -94,8 +100,18 @@ textarea {
   color: black;
   font-family: "Cairo", sans-serif;
 }
-
-input[type="submit"] {
+.continue{
+  background-color: #7c3e66;
+  border: none;
+  border-radius: 20px;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 1.5rem;
+  width: 40%;
+  
+  font-family: "Cairo", sans-serif;
+}
+input[type="submit"]{
   background-color: #7c3e66;
   border: none;
   border-radius: 10px;
@@ -139,16 +155,16 @@ input[type="submit"]:hover {
   color: #7e3c66 !important;
 }
 
-#closeForm {
+.closeForm {
   background-color: transparent;
   color: #7c3e66;
-  position: absolute;
-  top: 1%;
-  right: 1%;
+  float: right;
   border: none !important;
+  margin-top: 1%;
+  margin-right: 1%;
 }
-#closeForm:hover,
-#closeForm:focus {
+.closeForm:hover,
+.closeForm:focus {
   color: black;
   text-decoration: none;
   cursor: pointer;

@@ -13,7 +13,6 @@ $(".item:not(.add-charity-item)").mouseup(function () {
   }
 });
 $("#search-input").on("keyup", handleSearchChange);
-
 $("#search-field").submit(function (event) {
   event.preventDefault();
   $("#search-icon").addClass("fa-beat");

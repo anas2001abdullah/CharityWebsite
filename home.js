@@ -4,9 +4,12 @@ $("#myButton").click(function () {
   $("#myForm").fadeIn(400);
 });
 
-$("#closeForm").click(function () {
+$(".closeForm").click(function () {
   $(".shadow").fadeOut(400);
   $("#myForm").fadeOut(50);
+  $(".hintmsg").fadeIn();
+  $(".addCharityForm").fadeOut();
+  
 });
 
 $("#search-input").on("keyup", handleSearchFilterChange);
@@ -47,7 +50,7 @@ function handleSearchFilterChange() {
       $(this).hide();
     }
   });
-  if ($(".item").length === 1) {
+  if ($(".item").length === 0) {
     $(".notFound").show();
     $(".notFound").html(
       'There are no charities at the moment <i class="fa-solid fa-box-open"></i>'
@@ -69,7 +72,7 @@ function handleSearchFilterChange() {
     $(".notFound").hide();
   }
 }
-if ($(".item").length === 1) {
+if ($(".item").length === 0) {
   $(".notFound").show();
   $(".notFound").html(
     'There are no charities at the moment <i class="fa-solid fa-box-open"></i>'
@@ -79,10 +82,10 @@ if ($(".item").length === 1) {
 }
 // Charity clilck animation
 let isClicked = false;
-$(".item:not(.add-charity-item)").mousedown(function () {
+$(".item").mousedown(function () {
   isClicked = true;
 });
-$(".item:not(.add-charity-item)").mouseup(function () {
+$(".item").mouseup(function () {
   if (isClicked) {
     isClicked = false;
     $(this).addClass("active");
@@ -103,4 +106,12 @@ $('input').on('keyup', function() {
 });
 $('textarea').on('keyup', function() {
   $(this).next('.error-message').hide();
+});
+$('input[type=file]').on('change', function() {
+  $(this).next('.error-message').hide();
+});
+
+$(".continue").on("click", function(){
+      $(".hintmsg").hide();
+      $(".addCharityForm").fadeIn();
 });

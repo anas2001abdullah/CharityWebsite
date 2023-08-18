@@ -16,6 +16,10 @@ body {
   color: #3c033d;
   border: solid #7c3e66;
 }
+.purble{
+  color: #c85c8e;
+  font-weight: bolder;
+}
 
 .from,
 .subject {
